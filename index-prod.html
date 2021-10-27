@@ -10,6 +10,11 @@
 
 	<!-- Toggles -->
 	<meta class="mktoBoolean" id="toggle01" mktoName="Program Extra Content" default="false" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoBoolean" id="toggle02" mktoName="Ecomm Header Button" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoBoolean" id="toggle03" mktoName="Ecomm Form Section" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoBoolean" id="toggle04" mktoName="Skinny CrossLink" default="false" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoBoolean" id="toggle05" mktoName="Upcoming Sessions" default="false" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoBoolean" id="toggle06" mktoName="Skinny Underhero" default="false" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
 
 	<!-- Marketo Hero Vars -->
 	<!-- <meta class="mktoBoolean" id="mktoVar-hero-h2" mktoName="Hero / H2 / Display" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show"> -->
@@ -20,16 +25,19 @@
 	<meta class="mktoString" id="form-id" mktoName="Hero Form ID" default="5204">
 	<meta class="mktoString" id="img-bg-why" mktoName="Why Background Image" default="https://learn.bisk.com/rs/058-NIT-467/images/lp-emory-bg.jpg">
 	<meta class="mktoString" id="page-name" mktoName="Page Name (GA)" default="AA">
+	<meta class="mktoString" id="skinny-crosslink-content" mktoName="Skinny CrossLink UTM Cotent" default="I am a parameter">
 
-	<link rel="shortcut icon" href="{{my.Favicon}}" ktype="image/x-icon" >
-	<link rel="icon" href="{{my.Favicon}}" type="image/x-icon" >
+	<link rel="shortcut icon" href="https://learn.bisk.com/rs/058-NIT-467/images/favicon-emory.ico" ktype="image/x-icon" >
+	<link rel="icon" href="https://learn.bisk.com/rs/058-NIT-467/images/favicon-emory.ico" type="image/x-icon" >
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Noto+Sans:wght@400;700&family=Material+Icons+Outlined&display=swap" rel="stylesheet">
 	<script src="//app-ab16.marketo.com/js/forms2/js/forms2.min.js"></script>
 
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+
+	<script src='https://www.google.com/recaptcha/api.js?render=6LcXP9EcAAAAAPkDtu_gPVcnozSibVJcp6tOrOgz'></script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-197281205-1"></script>
@@ -46,11 +54,29 @@
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 
+		// Bisk/Emory GA Landing Page Container
 		gtag('config', 'UA-197281205-1');
+		
+		// Emory Google Ads Global Tag
+		// gtag('config', 'AW-377158384');
+		
+		// Bisk new Google Ads Global Tag
+		gtag('config', 'AW-1070968559');
+		
+		// Emory GA Container
+		gtag('config', 'UA-136209-6');
 	</script>
 
-	<!-- Facebook Pixel Code -->
-    <script>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-K5SHJHM');</script>
+	<!-- End Google Tag Manager -->
+
+	<!-- Facebook Pixel Code BISK -->
+    <!-- <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
         n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -61,13 +87,32 @@
         'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '316369316621022');
         fbq('track', 'PageView');
-    </script>
+    </script> -->
 
-    <noscript>
+    <!-- <noscript>
         <img height="1" width="1" style="display:none"
         src="https://www.facebook.com/tr?id=316369316621022&ev=PageView&noscript=1"/>
-    </noscript>
-    <!-- End Facebook Pixel Code -->
+    </noscript> -->
+    <!-- End BISK Facebook Pixel Code -->
+
+    <!-- Facebook Pixel Code EMORY -->
+	<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window, document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '223364639420608');
+		fbq('track', 'PageView');
+	</script>
+
+	<noscript>
+		<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=223364639420608&ev=PageView&noscript=1"/>
+	</noscript>
+	<!-- End EMORY Facebook Pixel Code -->
     
 	<style>
 		/* ---------- reset ---------- */
@@ -132,18 +177,26 @@
 		p.p-big { font-size: 1.1em; }
 		ul, ol { font-size: 0.9em; padding: 0 0 0 20px; line-height: 1.8em; margin: 0; }
 
+		.margin-tb-0 { margin: 0; }
 		.margin-tb-64 { margin: 64px 0; }
 		.margin-t-64 { margin-top: 64px; }
+		.margin-t-0 { margin-top: 0px; }
+		.margin-t-16 { margin-top: 16px; }
 		.margin-t-32 { margin-top: 32px; }
 		.margin-tm-32 { margin-top: -32px; }
+		.margin-b-16 { margin-bottom: 16px; }
 		.margin-b-32 { margin-bottom: 32px; }
 		.margin-b-64 { margin-bottom: 64px; }
+		.margin-r-32 { margin-right: 32px; }
+		.margin-l-32 { margin-left: 32px; }
 
+		.padding-tb-32 {padding: 32px 0;}
 		.padding-tb-64 {padding: 64px 0;}
 		.padding-r-32 { padding-right: 32px; }
 		.padding-l-32 { padding-left: 32px; }
 		.padding-32 { padding: 32px; }
 
+		.bg-white{ background-color: #ffffff; }
 		.bg-blue-dark { background-color: #022064; }
 		.bg-blue-light { background-color: #418FDE; }
 		.bg-gray { background-color: #F5F5F5; }
@@ -161,6 +214,7 @@
 		.font-normal { font-weight: normal; }
 		.center-text { text-align: center; }
 		.box-shadow { box-shadow: 0 0 10px 0 rgb(0 0 0 / 20%); }
+		.underline-text { text-decoration: underline; }
 
 		.button {
 			padding: 12px 48px;
@@ -219,8 +273,12 @@
 		}
 
 		a.tel { 
-			margin-right: 24px;
+			/*margin-right: 24px;*/
 			text-align: right;
+		}
+
+		a#toggle-header-ecomm {
+			margin-left: 24px;
 		}
 
 		.head-info-wrap {
@@ -288,6 +346,7 @@
 			/*min-height: 280px;*/
 			overflow: hidden;
 			border-radius: 4px;
+			width: 100%;
 		}
 
 		.card img {
@@ -298,6 +357,7 @@
 		.card-text {
 			padding: 12px 23px;
 			display: flex;
+			flex-grow: 1;
 		}
 
 		.card-text p {
@@ -321,6 +381,7 @@
 			padding-top: 12px;
 			padding-bottom: 12px;
 			margin-bottom: 12px;
+			display: block;
 		}
 
 		.card .button:hover {
@@ -330,6 +391,15 @@
 		.card .time {
 			font-weight: bold;
 			margin-top: 0;
+		}
+
+		.card-icon-block {
+			display: flex;
+			margin: 4px 0;
+		}
+		
+		.card-icon-block .material-icons {
+			margin: 4px 12px 0 0;
 		}
 
 		.yellowline {
@@ -543,6 +613,15 @@
         	color: #022064;
         }
 
+        #skinny-crosslink a {
+        	text-decoration: underline;
+        	display: block;
+        }
+
+        #skinny-crosslink-href h3 {
+        	margin-top: 0;
+        }
+
        	@media (max-width: 768px) {
 
 			h1 { font-size: 2.4em; }
@@ -571,6 +650,7 @@
 
 			.head-info-wrap {
 				width: 100%;
+		    	padding-left: 0;
 			}
 
 			a.tel {
@@ -785,6 +865,11 @@
 		#lp-hero-h2 { display: ${mktoVar-hero-h2}; }
 		#lp-hero-h3 { display: ${mktoVar-hero-h3}; }
 		#toggle-extra-content { display: ${toggle01}; }
+		#toggle-header-ecomm { display: ${toggle02}; }
+		#ecomm-wrapper { display: ${toggle03}; }
+		#skinny-crosslink { display: ${toggle04}; padding: 0 32px;}
+		#toggle-upcoming { display: ${toggle05}; }
+		#skinny-underhero { display: ${toggle06}; }
 
 		/*ecomm form*/
 
@@ -948,9 +1033,18 @@
 		  }
 		}
 
+		.grecaptcha-badge {
+			bottom: 64px !important;
+		}
+
 	</style>
 </head>
 <body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K5SHJHM"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	
 	<div class="loading">Loading&#8230;</div>
 	<div id="lp-wrap">
 
@@ -961,8 +1055,8 @@
 				<img src="https://learn.bisk.com/rs/058-NIT-467/images/lp-emory-logo-v2.png" id="emory-logo">
 			</div>
 			<div class="head-info-wrap">
-				<a href="tel:800-441-0187" class="tel fg-blue-dark">Call Now<br>800-441-0187</a>
-				<a href="#ecomm_now" class="button bg-yellow fg-blue-dark">Enroll Now</a>
+				<a href="tel:844-701-6100" class="tel fg-blue-dark">Call Now<br>844-701-6100</a>
+				<a href="#ecomm_now" id="toggle-header-ecomm" class="button bg-yellow fg-blue-dark gtag-click" gtag-val="enroll_now_sticky_bar">Enroll Now</a>
 			</div>
 		</div>
 
@@ -999,6 +1093,14 @@
 						<p>You’ll also learn the differences between Lean, Six Sigma and Lean Six Sigma, the roles and responsibilities of Lean Six Sigma project teams, and how to successfully apply key tools and techniques outside of the classroom.</p>
 					</span>
 				</div>
+			</div>
+		</div>
+
+		<!-- skinny underhero mod -->
+
+		<div id="skinny-underhero" class="row bg-yellow">
+			<div id="skinny-underhero-content" class="col-4-5 flex-col center-text padding-tb-32 mktoText" mktoName="Skinny Underhero">
+				<h3 class="fg-blue-dark">Lorem ipsum aliquip ut do nulla sunt pariatur cupidatat</h3>
 			</div>
 		</div>
 
@@ -1067,7 +1169,7 @@
 				</div>
 			</div>
 			<div class="row width-lock fg-gray">
-				<div class="col-3-5 flex-col padding-r-32">
+				<div class="col-3-5 flex-col">
 					<div class="card bg-blue-dark fg-white flex-center">
 						<div id="graystrap-box-text" class="card-text flex-col center-text mktoText" mktoName="GrayStrap Box Text">
 							<p class="big">U.S. respondents who completed any level of Six Sigma training <span class="fg-yellow font-bold">earn approximately $16,000 more</span> on average than those without any Six Sigma training*.</p>
@@ -1085,6 +1187,55 @@
 						</div>
 					</div>
 				</div> -->
+			</div>
+		</div>
+
+		<!-- upcoming -->
+
+		<div id="toggle-upcoming" class="row bg-white flex-col padding-tb-64">
+			<div class="row width-lock fg-gray">
+				<!-- Start selection to duplicate -->
+				<div class="col-3-5 flex-col margin-l-32 margin-r-32">
+					<div class="card bg-white fg-blue-dark flex-center">
+						<div id="upcoming-card-01" class="card-text flex-col mktoText" mktoName="Program Overview">
+							<h3 class="margin-t-16">Certificate Overview</h3>
+							<div class="card-icon-block">
+								<span class="material-icons material-icons-outlined">hourglass_top</span>
+								<p class="big margin-tb-0">Four Weeks</p>
+							</div>
+							<div class="card-icon-block">
+								<span class="material-icons material-icons-outlined">schedule</span>
+								<p class="big margin-tb-0">20 Hours</p>
+							</div>
+							<div class="card-icon-block">
+								<span class="material-icons material-icons-outlined">credit_card</span>
+								<p class="big margin-tb-0">$995</p>
+							</div>
+							<h3 class="margin-t-16">Upcoming Info Sessions</h3>
+							<div class="card-icon-block">
+								<span class="material-icons material-icons-outlined">event</span>
+								<p class="big margin-tb-0">Tue, Nov 2, 2021 — 12:00 - 1:00 PM</p>
+							</div>
+							<div class="card-icon-block">
+								<span class="material-icons material-icons-outlined">place</span>
+								<p class="big margin-tb-0">ECE Online</p>
+							</div>
+							<div>
+								<a href="https://register.gotowebinar.com/register/5064548887502565899" class="button bg-yellow fg-blue-dark gtag-click center-text" gtag-val="rsvp" style="border: none; margin-top: 24px;" target="_blank">RSVP</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- skinny crosslink mod -->
+
+		<div id="skinny-crosslink" class="row bg-yellow">
+			<div id="skinny-content" class="col-3-5 flex-col center-text padding-tb-64 mktoText" mktoName="Skinny CrossLink">
+				<h3 class="fg-blue-dark">Lorem ipsum aliquip ut do nulla sunt pariatur cupidatat dolore aliqua velit ea non aliqua laboris mollit qui ad velit.</h3>
+				<a href="#" target="blank" class="skinny-crosslink-href fg-blue-dark">Velit irure qui anim ut</a>
+				<a href="#" target="blank" class="skinny-crosslink-href fg-blue-dark">Non deserunt</a>
 			</div>
 		</div>
 
@@ -1115,13 +1266,13 @@
 		<div class="row margin-tb-64 flex-col" id="ecomm-wrapper">
 			<div class="row margin-b-32">
 				<div class="1-2 center-text">
-					<h3 id="ecomm_now">Enroll Now Online</h3>
+					<h3 id="ecomm_now" class="gtag-click fg-blue-dark" gtag-val="enroll_now_form">Enroll Now Online</h3>
 					<p>Fill out the form below to get started and take the next step toward your educational goals.</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-1-2">
-				<form novalidate="novalidate" id="ecomm_form" class="lead-form" action="https://stg-ecommerce.bisk.com/Enrollment/Initialize" method="POST" __bizdiag="1404908731" __biza="WJ__" onsubmit="showSpinner()">
+				<form novalidate="novalidate" id="ecomm_form" class="lead-form" action="https://enroll.eceonline.emory.edu/Enrollment/Initialize" method="POST" __bizdiag="1404908731" __biza="WJ__">
 				    <div class="form-group">
 					    <label for="FirstName" class="">First Name:</label>
 					    <input id="FirstName" name="FirstName" maxlength="255" type="text" class="ecomm-name-field form-control" placeholder="First Name">
@@ -1151,11 +1302,13 @@
 					    <div class="form-control  p-0 select-box-svg__inner">
 					        <select id="Program_of_Interest__c" name="Program_of_Interest__c" class="select-box-svg__select" style="color:#575757 !important" value="">
 					        	<option value="" disabled selected>Select Your Point of Interest</option>
-			                    <option id="CI" value="a037h000005K7JwAAK">Lean Continuous Improvement</option>
-			                    <option id="BB" value="a037h000005K7K6AAK">Lean Six Sigma Black Belt</option>
-			                    <option id="GB" value="a037h000005K7K1AAK">Lean Six Sigma Green Belt</option>
+			                    <option id="CI" value="a034M00000a9pPSQAY">Lean Continuous Improvement</option>
+			                    <!-- <option id="BB" value="a034M00000a9pPcQAI">Lean Six Sigma Black Belt</option> -->
+			                    <option id="GB" value="a034M00000a9pPXQAY">Lean Six Sigma Green Belt</option>
+			                    <option id="GBHC" value="a034M00000a77V8QAI">Lean Six Sigma Green Belt - Healthcare</option>
+			                    <option id="YB" value="a034M00000a77Z0QAI">Lean Six Sigma Yellow Belt</option>
 					         </select>
-					    <input type="hidden" class="ecommerce_programs_array" value="a037h000005K7JwAAK#a037h000005K7K6AAK#a037h000005K7K1AAK#a036100000Rr4HUAAZ#a0361000008wRRGAA2#a034M00000XpjPMQAZ#a0361000008wRRMAA2#a034M00000XpjPRQAZ#a0361000008wRROAA2#a034M00000XpjPlQAJ#a034M00000XpjPqQAJ#a034M00000XpjPgQAJ#a0361000008wRRUAA2#a0361000008wRRVAA2#a0361000008wRRWAA2#a036100000RrX2WAAV#a034M00000RjmtcQAB#a034M00000XpjQ0QAJ#a034M00000XpjQ5QAJ#a034M00000XpjQAQAZ#">
+					    <!-- <input type="hidden" class="ecommerce_programs_array" value="a034M00000a9pPSQAY#a034M00000a9pPcQAI#a034M00000a9pPXQAY#a037h000005hoAuAAI#a0361000008wRRGAA2#a034M00000XpjPMQAZ#a0361000008wRRMAA2#a034M00000XpjPRQAZ#a0361000008wRROAA2#a034M00000XpjPlQAJ#a034M00000XpjPqQAJ#a034M00000XpjPgQAJ#a0361000008wRRUAA2#a0361000008wRRVAA2#a0361000008wRRWAA2#a036100000RrX2WAAV#a034M00000RjmtcQAB#a034M00000XpjQ0QAJ#a034M00000XpjQ5QAJ#a034M00000XpjQAQAZ#"> -->
 						</div>
 					</div>
 					<div class="form-group">
@@ -1418,7 +1571,7 @@
 					    </div>
 					</div>
 					<div class="form-group hidden-controls d-none">
-					    <input type="hidden" id="ecomm_univ_id" name="University_Institution__c" value="0017h00000WPUpdAAH">
+					    <input type="hidden" id="ecomm_univ_id" name="University_Institution__c" value="0014M00001uQ2VNQA0">
 					    <input type="hidden" name="LeadSource" value="Website">
 					    <input type="hidden" name="Inquiry_Source_Detail__c" value="Direct Visit">
 					    <input type="hidden" name="Inquiry_Source_Asset__c" value="">
@@ -1445,7 +1598,7 @@
 					    <input type="hidden" name="Program_of_Interest" disabled="disabled" value="">
 					    <input type="hidden" name="program_id" disabled="disabled" value="">
 					    <input type="hidden" name="parent_program_id" disabled="disabled" value="">
-					    <input type="hidden" name="school_id" disabled="disabled" value="0017h00000WPUpdAAH">
+					    <input type="hidden" name="school_id" disabled="disabled" value="0014M00001uQ2VNQA0">
 					    <input type="hidden" id="GCLID__c" name="GCLID__c" value="">
 					</div>
 					<div class="tcpaMessage">
@@ -1454,7 +1607,7 @@
 					      By completing this form and clicking the button below, I consent to receiving calls, text messages and/or emails from BISK, its client institutions, and their representatives regarding educational services and programs. I understand calls and texts may be directed to the number I provide using automatic dialing technology. I understand that this consent is not required to purchase goods or services.
 					    </p>
 					</div>
-					<button type="submit" id="submit_ecomm_form" class="button bg-yellow fg-blue-dark" style="border: none; margin-top: 12px;">Enroll Now</button>
+					<button type="submit" id="submit_ecomm_form" class="button bg-yellow fg-blue-dark gtag-click" gtag-val="enroll_now_ecomm_form" style="border: none; margin-top: 12px;">Enroll Now</button>
 				</form>
 			</div>
 			</div>
@@ -1500,6 +1653,48 @@
 
     	pgName = '${page-name}' + '_';
 
+    	//////////// reCAPTCHA ///////////
+
+    	rc3config = {
+			siteKey: '6LcXP9EcAAAAAPkDtu_gPVcnozSibVJcp6tOrOgz',
+			triggerElement: '.mktoButton[data-dir="next"]',
+			outputID: 'score',
+			onLoad: false,
+			botScore: 0
+		}
+
+		tokenize = () => {
+	
+			let url = 'http://3.231.243.219:8000/?token=';
+			let genRC3El = document.querySelectorAll(`${rc3config.triggerElement}`);
+			let score = document.getElementById(rc3config.outputID);
+
+			genRC3El.forEach(element => {
+				element.addEventListener('click', (element) => {
+					generateToken();
+				});
+			});
+
+			populateHiddenField = (token) => {
+				mForm.addHiddenFields({ lastReCAPTCHAUserFingerprint : token });
+			}
+
+			generateToken = e => {
+				grecaptcha.execute(rc3config.siteKey, {action: 'rc3'})
+					.then(function(token) {
+						console.log('---------------')
+						console.log(token);
+						populateHiddenField(token);
+				});
+			}
+
+			grecaptcha.ready(function() {
+				if (rc3config.onLoad == true) {
+					generateToken();
+				}
+			});
+		}
+
     	//////////// Validation ///////////
 
     	$('form#ecomm_form').validate({
@@ -1531,19 +1726,23 @@
     		}
     	});
 
+		window.addEventListener('load', (event) => {
+			$("#ecomm_form").submit(function (event) {
 
-    	$("#ecomm_form").submit(function (event) {
-
-		    var isValid = $('#ecomm_form').valid();
-		    if (isValid) {    
-		        $(".loading").show();
-		    }
+			    var isValid = $('#ecomm_form').valid();
+			    if (isValid) {    
+			        $(".loading").show();
+			    }
+			});
 		});
 
-		selectedInput = document.getElementById('${page-name}');
-		console.log(selectedInput);
-		selectedInput.setAttribute('selected', 'selected');
-
+		checkInput = !!document.getElementById('${page-name}');
+		console.log(checkInput);
+		if (checkInput == true) {
+			selectedInput = document.getElementById('${page-name}');
+			selectedInput.setAttribute('selected', 'selected');
+		}
+		
 		// $(pgName).setAttribute()
 
     	//////////// SF Chat ///////////
@@ -1666,6 +1865,7 @@
 		//////////// Marketo Form Magic ///////////
 
 		MktoForms2.whenReady(function(form) {
+			mForm = form;
 			var formEl = form.getFormElem()[0],
 			arrayify = getSelection.call.bind([].slice);
 
@@ -1930,6 +2130,7 @@
 			
 			btnNext.addEventListener('click', function() {
 				gtag('event', "click", {
+					'send_to' : 'UA-197281205-1',
 					'event_category': "ST6",
 					'event_label': pgName + "form_next",
 				});
@@ -1937,6 +2138,7 @@
 
 			btnPrev.addEventListener('click', function() {
 				gtag('event', "click", {
+					'send_to' : 'UA-197281205-1',
 					'event_category': "ST6",
 					'event_label': pgName + "form_back"
 				});
@@ -1944,10 +2146,13 @@
 
 			btnSub.addEventListener('click', function() {
 				gtag('event', "click", {
+					'send_to' : 'UA-197281205-1',
 					'event_category': "ST6",
 					'event_label': pgName + "form_submit"
 				});
 			});
+
+			tokenize();
 
 		});
 
@@ -1959,6 +2164,7 @@
 			element.addEventListener('click', function() {
 				gtagVal = element.getAttribute("gtag-val");
 				gtag('event', "click", {
+					'send_to' : 'UA-197281205-1',
 					'event_category': "ST6",
 					'event_label': pgName + gtagVal
 				});
@@ -2012,6 +2218,23 @@
 				element.style.opacity = '1';
 			}
 		}
+
+		// Params hack
+
+		const skinyUTMs = window.location.search;
+		let skinnyLinks = document.querySelectorAll('.skinny-crosslink-href');
+		let skinnyUTMcontent = 'utm_content=${skinny-crosslink-content}';
+		skinnyLinks.forEach(element => {
+			let att = element.getAttribute('href');
+			if (window.location.href.indexOf('?') <= 0) {
+				console.log('no ? in url');
+				element.setAttribute('href', att + '?' + skinnyUTMcontent);
+			}
+			else {
+				console.log('yes ? in url');
+				element.setAttribute('href', att + skinyUTMs + '&' + skinnyUTMcontent);
+			}
+		});
     </script>
 </body>
 </html>
