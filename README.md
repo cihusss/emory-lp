@@ -1,3 +1,3 @@
 # Emory Marketo LP Template
 
-Compatible only with Marketo guided templates.
+This template is compatible only with Marketo guided templates. html, css and js are bundled into one html file.
