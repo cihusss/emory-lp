@@ -1,1 +1,1 @@
-# emory-lp
+# Emory Marketo LP Template
