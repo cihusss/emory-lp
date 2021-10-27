@@ -1,0 +1,2017 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta class="mktoString" id="page-title" mktoName="Page Title" default="Lean Six Sigma Green Belt [Online Certification] | Emory University.">
+	<title>${page-title}</title>
+	<meta name="viewport" content="width=device-width, inital-scale=1">
+
+	<meta charset="UTF-8">
+	<meta name="description" content="${meta-description}">
+
+	<!-- Toggles -->
+	<meta class="mktoBoolean" id="toggle01" mktoName="Program Extra Content" default="false" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+
+	<!-- Marketo Hero Vars -->
+	<!-- <meta class="mktoBoolean" id="mktoVar-hero-h2" mktoName="Hero / H2 / Display" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show"> -->
+	<!-- <meta class="mktoBoolean" id="mktoVar-hero-h3" mktoName="Hero / H3 / Display" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show"> -->
+
+	<meta class="mktoString" id="meta-description" mktoName="Meta Description" default="Help your company increase efficiency, learn how to lead Green Belt projects and teams, and earn certification online through Emory Continuing Education.">
+	<meta class="mktoString" id="img-bg-hero" mktoName="Hero Background Image" default="https://learn.bisk.com/rs/058-NIT-467/images/lp-emory-lp-hero.jpg">
+	<meta class="mktoString" id="form-id" mktoName="Hero Form ID" default="5204">
+	<meta class="mktoString" id="img-bg-why" mktoName="Why Background Image" default="https://learn.bisk.com/rs/058-NIT-467/images/lp-emory-bg.jpg">
+	<meta class="mktoString" id="page-name" mktoName="Page Name (GA)" default="AA">
+
+	<link rel="shortcut icon" href="{{my.Favicon}}" ktype="image/x-icon" >
+	<link rel="icon" href="{{my.Favicon}}" type="image/x-icon" >
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<script src="//app-ab16.marketo.com/js/forms2/js/forms2.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-197281205-1"></script>
+	<script>
+		if ((window.location.host == 'localhost') || (window.location.host == 'learn.bisk.com') || (window.location.host == 'eceonline.emory.edu') || (window.location.host == 'na-ab16.marketodesigner.com')) {
+			console.log('correct url');
+		}
+		else {
+			window.location.href = 'https://www.bisk.com';
+		}
+		
+      	console.log('ga');
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-197281205-1');
+	</script>
+
+	<!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '316369316621022');
+        fbq('track', 'PageView');
+    </script>
+
+    <noscript>
+        <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=316369316621022&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    
+	<style>
+		/* ---------- reset ---------- */
+
+		html { scroll-behavior: smooth; }
+		html, body { margin: 0; height: 100%; }
+		body { overflow-x: hidden; }
+		a { text-decoration: none; }
+		a:hover { text-decoration: underline; }
+		a img { border: 0; outline: none; } 
+
+		/* ---------- the grid ---------- */
+
+		*, *:after, *:before { box-sizing: border-box; }
+
+		.row { width: 100%; }
+
+		.flex { display: flex; align-items: center; justify-content: center; }
+		.width-lock {max-width: 1060px;padding: 0 32px;}
+		[class*='col-'], .row {display: flex;align-items: center;justify-content: center;}
+
+		.flex-row { flex-direction: row; }
+		.flex-col { flex-direction: column; }
+		.flex-start { align-items: flex-start; }
+		.flex-end { align-items: flex-end; }
+		.flex-center { align-items: center; }
+		.space-between { justify-content: space-between; }
+
+		.col-1-1, .col-2-2, .col-3-3, .col-4-4, .col-5-5 { width: 100%; }
+		.col-1-2 {width: 50%;}
+		.col-1-3 { width: 33.33%; }
+		.col-2-3 { width: 66.7%; }
+		.col-1-5 { width: 20%; }
+		.col-1-4 { width: 25%; }
+		.col-2-5 { width: 40%; }
+		.col-3-5 { width: 60%; }
+		.col-4-5 { width: 80%; }
+		.col-45-5 { width: 90%; }
+
+		.only-mob { display: none; }
+		.only-desk { display: flex; }
+
+		@media (max-width: 768px) {
+
+		    .flex-row, .row, .space-between { flex-direction: column; } 
+		    [class*='col-'] { width: 100%; }
+
+		    .only-mob { display: flex; }
+			.only-desk { display: none; }
+		}
+
+		/* ---------- the base ---------- */
+
+		h1 { font-size: 3.6em; }
+		h2 { font-size: 1.4em; font-weight: normal; }
+		h3 { font-size: 1.6em; font-weight: normal; }
+		h4 { font-size: 1.3em; margin: 16px 0; line-height: 1.8em; }
+		h5 { font-size: 1.1em; line-height: 1.4em; margin: 0; }
+		h1, h3 { font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; font-weight: bold; }
+		p { font-size: 0.9em; line-height: 1.8em; }
+		p.disc {font-size: 0.5em !important ;opacity: 0.6;margin-top: 16px;}
+		p.p-big { font-size: 1.1em; }
+		ul, ol { font-size: 0.9em; padding: 0 0 0 20px; line-height: 1.8em; margin: 0; }
+
+		.margin-tb-64 { margin: 64px 0; }
+		.margin-t-64 { margin-top: 64px; }
+		.margin-t-32 { margin-top: 32px; }
+		.margin-tm-32 { margin-top: -32px; }
+		.margin-b-32 { margin-bottom: 32px; }
+		.margin-b-64 { margin-bottom: 64px; }
+
+		.padding-tb-64 {padding: 64px 0;}
+		.padding-r-32 { padding-right: 32px; }
+		.padding-l-32 { padding-left: 32px; }
+		.padding-32 { padding: 32px; }
+
+		.bg-blue-dark { background-color: #022064; }
+		.bg-blue-light { background-color: #418FDE; }
+		.bg-gray { background-color: #F5F5F5; }
+		.bg-yellow { background-color: #FECE4D; }
+		.bg-emory {
+			background-image: url(${img-bg-why});
+			background-size: cover;
+			background-position: center center;
+		}
+		.fg-white { color: #ffffff; }
+		.fg-blue-dark { color: #022064; }
+		.fg-gray { color: #484848; }
+		.fg-yellow { color: #FECE4D; }
+		.font-bold { font-weight: bold; }
+		.font-normal { font-weight: normal; }
+		.center-text { text-align: center; }
+		.box-shadow { box-shadow: 0 0 10px 0 rgb(0 0 0 / 20%); }
+
+		.button {
+			padding: 12px 48px;
+			border-radius: 4px;
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 16px;
+			cursor: pointer;
+		}
+
+		.button:hover {
+			text-decoration: none;
+		}
+
+		.image-square {
+			width: 100%;
+			height: 300px;
+			background-image: url("https://learn.bisk.com/rs/058-NIT-467/images/lp-social.jpg");
+			background-position: -5px center;
+			box-shadow: 0 0 10px 0 rgb(0 0 0 / 20%);
+			background-size: cover;
+			border-radius: 4px;
+		}
+
+		.image-100, .image-100 img {
+			width: 100%;
+		}
+
+		#lp-wrap {
+			font-family: 'Noto Sans', sans-serif;
+			height: 100%;
+		}
+
+		/* ---------- page ---------- */
+
+		#lp-header {
+			min-height: 90px;
+			position: fixed;
+			top: 0;
+			background: white;
+			border-bottom: 1px solid #e9e9e9;
+			z-index: 20000;
+		}
+
+		#lp-header a {
+			/*font-family: 'Barlow Condensed', sans-serif;
+    		text-transform: uppercase;
+    		font-weight: bold;
+    		color: #022064;
+    		padding-right: 32px;
+    		font-size: 20px;*/
+		}
+
+		#emory-logo {
+			width: 300px;
+		}
+
+		a.tel { 
+			margin-right: 24px;
+			text-align: right;
+		}
+
+		.head-info-wrap {
+		    display: flex;
+		    align-items: center;
+		    justify-content: flex-end;
+		    width: 50%;
+		    padding-right: 32px;
+		}
+
+		#vu-slogan {
+			width: 180px;
+		}
+
+		#lp-promo {
+			min-height: 70px;
+		}
+
+		#lp-promo p {
+			font-size: 1.1em;
+		}
+
+		#lp-hero {
+			background-image: url(${img-bg-hero});
+			background-size: cover;
+			background-position: center -100px;
+			background-repeat: no-repeat;
+			margin-top: 90px;
+		}
+
+		#lp-hero h1, #lp-hero h3, #lp-underhero h3 {
+			margin-bottom: 0;
+		}
+
+		.hero-space {
+			padding-top: 220px;
+			padding-bottom: 32px;
+		}
+
+		#lp-form-wrap {
+			padding: 0 0px 0 64px;
+		}
+
+		#lp-form {
+			background: rgba(255,255,255,1);
+			width: 100%;
+			box-sizing: border-box;
+			padding: 32px 48px 16px 48px;
+			opacity: 0;
+			transition: opacity .5s;
+			border-radius: 4px;
+		}
+
+		#lp-phone {
+			opacity: 0;
+			transition: opacity .5s;
+			font-size: 1.2em;
+		}
+
+		#lp-underhero {flex-direction: column;/* padding: 16px 0; */}
+
+		.card {
+			display: flex;
+			box-shadow: 0 0 10px 0 rgb(0 0 0 / 20%);
+			/*min-height: 280px;*/
+			overflow: hidden;
+			border-radius: 4px;
+		}
+
+		.card img {
+			width: 100px;
+			align-self: center;
+		}
+
+		.card-text {
+			padding: 12px 23px;
+			display: flex;
+		}
+
+		.card-text p {
+			font-size: 0.8em;
+			align-self: center;
+		}
+
+		.card .big {
+			font-size: 18px;
+		}
+
+		.card-text .disc {
+			margin-top: 0;
+		}
+
+		.card h4 {
+			margin: 8px 0 0 0;
+		}
+
+		.card .button {
+			padding-top: 12px;
+			padding-bottom: 12px;
+			margin-bottom: 12px;
+		}
+
+		.card .button:hover {
+			text-decoration: none;
+		}
+
+		.card .time {
+			font-weight: bold;
+			margin-top: 0;
+		}
+
+		.yellowline {
+			border-top: 4px solid #FECE4D;
+		}
+
+		#footer {
+			position: relative;
+			padding: 60px;
+		}
+
+		#footer p {
+			font-size: 0.8em;
+		}
+
+		#footer a {
+			margin: 4px;
+			font-size: 0.8em;
+			white-space: nowrap;
+			text-decoration: underline;
+		}
+
+		/* --- multi-step form --- */
+
+        .mktoForm > .mktoFormRow fieldset {
+           border: none;
+        }
+        .mktoForm > .mktoFormRow,
+        .mktoForm > .mktoButtonRow,
+        .mktoForm > .mktoFormRow fieldset legend {
+           display: none;   
+        }
+        .mktoForm > .mktoButtonRow button[type="button"] {
+           margin-right: 10px;
+           margin-bottom: 10px;
+        }
+        .mktoForm .mktoCheckboxList > .mktoError {
+           right: auto !important;
+           bottom: -54px !important;
+        }
+
+        .mktoForm {
+            padding: 16px 0 24px 0;
+            border-radius: 4px;
+            width: 100% !important;
+            font-family: 'Noto Sans', sans-serif !important;
+            margin-top: 8px;
+        }
+
+        .mktoForm label {
+            width: auto !important;
+            top: 20px;
+            display: block;
+            position: absolute;
+            left: 6px;
+            font-size: 9px;
+        }
+
+        .mktoForm input {
+            width: 100% !important;
+            height: 42px !important; 
+            border: 1px solid #a9a9a9;
+            border-radius: 4px;
+            padding: 2px 6px 0 6px !important;
+        }
+
+        .mktoForm input, .mktoForm select {
+        	 font-size: 1.1em !important;
+        }
+
+        .mktoForm select {
+            width: 100% !important;
+            height: 42px !important; 
+            border: 1px solid #a9a9a9;
+            border-radius: 4px;
+            background: white;
+            background-image:
+                linear-gradient(45deg, transparent 50%, #022064 50%),
+                linear-gradient(135deg, #022064 50%, transparent 50%),
+                linear-gradient(to right, white, white);
+            background-position:
+                calc(100% - 20px) calc(1em + 4px),
+                calc(100% - 15px) calc(1em + 4px),
+                100% 0;
+            background-size:
+                5px 5px,
+                5px 5px,
+                2.5em 2.5em;
+            background-repeat: no-repeat;
+            padding: 2px 6px 0 6px !important;
+        }
+
+        .mktoForm fieldset {
+            padding: 0 !important;
+            width: 100%;
+        }
+
+        .mktoFieldDescriptor {
+            width: 100%;
+            margin: 0 !important;
+        }
+
+        .mktoFieldWrap {
+            width: 100%;
+        }
+
+        .mktoOffset {
+            display: none;
+        }
+
+        .mktoButtonWrap {
+            width: 100%;
+            margin: 0 !important;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .mktoButton {
+            border-radius: 4px;
+            height: 42px;
+            background: #0C6C5B !important;
+            border: none !important;
+            margin: 6px 0 0 0 !important;
+            /*padding: 8px 24px !important;*/
+            width: 100%;
+            font-family: 'Barlow Condensed', sans-serif !important;
+            text-transform: uppercase;
+            font-size: 1.2em !important;
+        }
+
+        .mktoButton[data-dir="prev"] {
+            background: #4e4d4d !important;
+            margin: 6px 16px 0 0 !important;
+        }
+
+        .mktoForm .mktoRequiredField label.mktoLabel {
+            font-weight: normal !important;
+        }
+
+        .mktoLabel {
+            opacity: 0;
+            transition: opacity .3s ease-out;
+        }
+
+        .mktoAsterix {
+            padding-left: 4px !important;
+        }
+
+        .mktoErrorMsg {
+            background: #cc0000 !important;
+            border-radius: 4px !important;
+            box-shadow: none !important;
+            border: none !important;
+        }
+
+        .mktoErrorArrow {
+            background-position: #cc0000 !important;
+            box-shadow: none !important;
+            border: none !important;
+        }
+
+        .mktoForm .mktoAsterix {
+            opacity: 0;
+        }
+
+        .mktoHtmlText {
+            width: 100% !important;
+        }
+
+        .mktoForm legend {
+            display: block !important;
+            margin: 0 0 -12px !important;
+            font-size: 12px;
+            font-family: 'Noto Sans', sans-serif;
+            opacity: .6;
+        }
+
+        input, input::placeholder, select {
+            color: #4C4C4C;
+        }
+
+        option:first-child { 
+            color: red!important;
+        }
+
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover, 
+        input:-webkit-autofill:focus,
+        textarea:-webkit-autofill,
+        textarea:-webkit-autofill:hover,
+        textarea:-webkit-autofill:focus,
+        select:-webkit-autofill,
+        select:-webkit-autofill:hover,
+        select:-webkit-autofill:focus {
+          /*-webkit-box-shadow: 0 0 0px 1000px #000 inset;*/
+          transition: background-color 5000s ease-in-out 0s;
+        }
+
+        input[type=text], input[type=button], select {
+            -webkit-appearance: none;
+        }
+
+        .form-disc {
+        	font-size:  0.7em;
+        	padding: 24px 0 0 0 !important;
+        	line-height: 1.6em;
+        }
+
+        .form-disc a {
+        	text-decoration: underline;
+        	color: #022064;
+        }
+
+       	@media (max-width: 768px) {
+
+			h1 { font-size: 2.4em; }
+
+			.margin-tb-64 { margin: 32px 0; }
+			.margin-b-64 { margin-bottom: 32px; }
+			.padding-tb-64 { padding: 32px 0; }
+			.m-left-text { text-align: left; }
+			.m-flex-start { align-items: flex-start; }
+
+			#lp-header {
+				min-height: auto;
+				padding: 24px 0;
+			}
+
+			#lp-header a {
+				margin-top: 16px;
+	    		/*padding-right: 0px;*/
+	    		/*padding-top: 16px;*/
+	    		/*font-size: 16px;*/
+			}
+
+			#emory-logo {
+				width: 100%;
+			}
+
+			.head-info-wrap {
+				width: 100%;
+			}
+
+			a.tel {
+				text-align: left;
+			}
+
+			#lp-promo {
+				text-align: center;
+			}
+
+			#lp-promo p {
+				font-size: 0.9em;
+			}
+
+			#lp-hero {
+				background-size: contain;
+				background-position: top center;
+			}
+
+			#lp-form-wrap {
+				padding: 0;
+			}
+
+		    #lp-form {
+		    	margin: 32px 0 24px 0;
+		    	padding: 32px;
+		    }
+
+		    #lp-phone {
+			    border-radius: 0 0 4px 4px;
+			    width: 100%;
+			    background: #FECE4D;
+			    color: #022064;
+			    text-align: center;
+			    margin-top: -48px;
+			}
+
+		    .hero-space {
+		    	padding-top: 200px;
+		    }
+
+		    .padding-r-32, .padding-l-32 {
+		    	padding: 0;
+			}
+
+			.mob-only-padding-t-32 {
+				padding-top: 32px;
+			}
+
+			.mob-only-margin-t-32 {
+				margin-top: 32px;
+			}
+
+			.mob-only-margin-b-32 {
+				margin-bottom: 32px;
+			}
+
+			.mob-only-margin-t-64 {
+				margin-top: 64px;
+			}
+
+			.mob-only-margin-b-64 {
+				margin-bottom: 64px;
+			}
+
+			.mob-only-margin-tb-64 {
+				margin-top: 64px;
+				margin-bottom: 64px;
+			}
+
+			#image-square {
+				max-height: none;
+			}
+
+			.box-horizontal {
+				width: 100%;
+				height: auto;
+				background-image: none;
+			}
+
+			.mob-bg-blue-light {
+				background-color: #418FDE;
+			}
+
+			.mob-bg-gray {
+				background-color: #f5f5f5;
+			}
+
+			#diagonal {
+				background-image: none;
+			}
+
+			#footer {
+				padding: 32px;
+			}
+
+			/* form stuff */
+
+			.mktoFormRow { 
+                margin: 0 0 16px 0 !important;
+            }
+
+            .mktoFormRow input[type="hidden"] {
+                display: none;
+            }
+
+            .mktoButtonWrap {
+            	flex-direction: column-reverse;
+            }
+
+            .mktoButton {
+                margin-top: -16px !important;
+                height: 42px !important;
+                font-size: 18px !important;
+                transition: color .3s ease-in-out;
+            }
+
+            .mktoButton:hover {
+                opacity: 0.8;
+            }
+
+            .mktoButton[data-dir="prev"] {
+                background: #4e4d4d !important;
+                margin: 16px 16px 0 0 !important;
+            }
+
+            .mktoForm {
+                max-width: 100% !important;
+                padding: 24px 0 !important;
+                margin-top: -16px !important;
+            }
+
+            .mktoForm label {
+                top: 4px;
+                left: -7px;
+            }
+
+            .mktoForm input, .mktoForm select {
+                height: 48px !important;
+            }
+
+            .mktoForm legend {
+                margin: 0 0 -4px -8px !important;
+            }
+
+            .form-disc {
+            	padding: 0 !important;
+            }
+
+            .embeddedServiceInvitation { display: none; }
+
+            #ecomm-wrapper {
+            	padding: 0 32px;
+            }
+
+            form#ecomm_form {
+            	display: flex;
+            	flex-direction: column;
+            }
+
+        }
+
+	    /* ---------- salesforce chat ---------- */
+
+	    #lp-chat-question { font-weight: bold;  color: #022064; }
+
+		.embeddedServiceHelpButton .helpButton .uiButton {
+			background-color: #0C6C5B !important;
+			font-family: "Noto Sans", sans-serif;
+		}
+		.embeddedServiceHelpButton .helpButton .uiButton:focus {
+			outline: 1px solid #0C6C5B;
+		}
+
+		.embeddedServiceHelpButton .helpButton {
+			right: 24px !important;
+		}
+		@font-face {
+			font-family: 'Noto Sans';
+			src: url('https://c1.sfdcstatic.com/etc/clientlibs/sfdc-aem-master/clientlibs_base/fonts/SalesforceSans-Regular.woff') format('woff'),
+			url('https://c1.sfdcstatic.com/etc/clientlibs/sfdc-aem-master/clientlibs_base/fonts/SalesforceSans-Regular.ttf') format('truetype');
+		}
+
+		#snapins_invite {background-color: #FFFFFF;font-family: "Noto Sans", sans-serif;overflow: visible;border-radius: 8px;visibility: hidden;padding: 0 0 16px 0;}
+		.embeddedServiceInvitation { background-color: transparent; max-width: 290px; max-height: 210px; -webkit-box-shadow: 0 7px 12px rgba(0,0,0,0.28); -moz-box-shadow: 0 7px 12px rgba(0,0,0,0.28); box-shadow: 0 7px 12px rgba(0,0,0,0.28); margin-top: 1070px !important; }
+		@media only screen and (min-width: 48em) { /*mobile*/ .embeddedServiceInvitation { max-width: 332px; max-height: 210px; } }
+		.embeddedServiceInvitation > .embeddedServiceInvitationHeader { width: inherit; height: 52px; line-height: 32px; padding: 10px; color: #FFFFFF; background-color: #0C6C5B; overflow: initial; display: flex; justify-content: space-between; align-items: stretch; border-top-left-radius: 8px; border-top-right-radius: 8px; }
+		.embeddedServiceInvitationHeader #embeddedServiceAvatar { width: 32px; height: 32px; border-radius: 50%; }
+		.embeddedServiceInvitationHeader .embeddedServiceTitleText { font-size: 18px; color: #FFFFFF; overflow: hidden; word-wrap: normal; white-space: nowrap; text-overflow: ellipsis; align-self: stretch; flex-grow: 1; max-width: 100%; margin: 0 12px; }
+		.embeddedServiceInvitationHeader .embeddedServiceCloseIcon { border: none; border-radius: 3px; cursor: pointer; position: relative; bottom: 3%; background-color: transparent; width: 32px; height: 32px; font-size: 23px; color: #FFFFFF; }
+		.embeddedServiceInvitationHeader .embeddedServiceCloseIcon:focus { outline: none; }
+		.embeddedServiceInvitationHeader .embeddedServiceCloseIcon:focus::before { content: " "; position: absolute; top: 11%; left: 7%; width: 85%; height: 85%; background-color: rgba(255, 255, 255, 0.2); border-radius: 4px; pointer-events: none; }
+		.embeddedServiceInvitationHeader .embeddedServiceCloseIcon:active, .embeddedServiceCloseIcon:hover { background-color: #FFFFFF; color: rgba(0,0,0,0.7); opacity: 0.7; }
+		.embeddedServiceInvitation > .embeddedServiceInvitationBody { background-color: #FFFFFF; max-height: 110px; min-width: 260px; margin: 0 8px; font-size: 14px; line-height: 20px; overflow: auto; }
+		.embeddedServiceInvitationBody p { color: #000000; padding: 8px; margin: 12px 0; }
+		.embeddedServiceInvitation > .embeddedServiceInvitationFooter {width: inherit;color: #FFFFFF;text-align: right;background-color: #FFFFFF;padding: 10px;border-bottom-left-radius: 8px;border-bottom-right-radius: 8px;}
+		.embeddedServiceInvitationFooter > .embeddedServiceActionButton { font-size: 14px; max-height: 40px; border: none; border-radius: 4px; padding: 10px; margin: 4px; text-align: center; text-decoration: none; display: inline-block; cursor: pointer; }
+		.embeddedServiceInvitationFooter > #acceptInvite { background-color: #0C6C5B; color: #FFFFFF; }
+		.embeddedServiceInvitationFooter > #rejectInvite { background-color: #FFFFFF; color: #0C6C5B; }
+
+
+		/* animate barge */
+
+		#snapins_invite {
+			opacity: 0;
+			transition: opacity .5s;
+		}
+
+		/*marketo selectors*/
+
+		#lp-promo { display: ${mktoVar-toggle-promo}; }
+		#lp-hero-h2 { display: ${mktoVar-hero-h2}; }
+		#lp-hero-h3 { display: ${mktoVar-hero-h3}; }
+		#toggle-extra-content { display: ${toggle01}; }
+
+		/*ecomm form*/
+
+		form#ecomm_form {
+			max-width: 460px;
+		}
+
+		form#ecomm_form input, form#ecomm_form select {
+		    height: 42px;
+		    border: 1px solid #a9a9a9;
+		    margin: 4px 0;
+		    padding: 0px 12px;
+		    width: 100%;
+		    border-radius: 4px;
+		    font-family: "Noto Sans", sans-serif;
+			font-size: 14.3px;
+		}
+
+		form#ecomm_form label { 
+			display: none;
+		}
+
+		form#ecomm_form .hidden {
+			display: none;
+		}
+
+		form#ecomm_form  select {
+			padding: 0px 12px;
+            background: white;
+            background-image:
+                linear-gradient(45deg, transparent 50%, #022064 50%),
+                linear-gradient(135deg, #022064 50%, transparent 50%),
+                linear-gradient(to right, white, white);
+            background-position:
+                calc(100% - 20px) calc(1em + 4px),
+                calc(100% - 15px) calc(1em + 4px),
+                100% 0;
+            background-size:
+                5px 5px,
+                5px 5px,
+                2.5em 2.5em;
+            background-repeat: no-repeat;
+        }
+
+        /*Spinner*/
+
+		.loading {
+			position: fixed;
+			z-index: 999;
+			overflow: show;
+			margin: auto;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			width: 50px;
+			height: 50px;
+			display: none;
+		}
+
+		.loading:before {
+			content: '';
+			display: block;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(255,255,255,0.5);
+		}
+
+		/* :not(:required) hides these rules from IE9 and below */
+		.loading:not(:required) {
+			/* hide "loading..." text */
+			font: 0/0 a;
+			color: transparent;
+			text-shadow: none;
+			background-color: transparent;
+			border: 0;
+		}
+
+		.loading:not(:required):after {
+			content: '';
+			display: block;
+			font-size: 10px;
+			width: 100px;
+			height: 100px;
+			margin-top: -0.5em;
+
+			border: 10px solid #022064;
+			border-radius: 100%;
+			border-bottom-color: transparent;
+			-webkit-animation: spinner 1s linear 0s infinite;
+			animation: spinner 1s linear 0s infinite;
+		}
+
+		/* Animation */
+
+		@-webkit-keyframes spinner {
+		  0% {
+		    -webkit-transform: rotate(0deg);
+		    -moz-transform: rotate(0deg);
+		    -ms-transform: rotate(0deg);
+		    -o-transform: rotate(0deg);
+		    transform: rotate(0deg);
+		  }
+		  100% {
+		    -webkit-transform: rotate(360deg);
+		    -moz-transform: rotate(360deg);
+		    -ms-transform: rotate(360deg);
+		    -o-transform: rotate(360deg);
+		    transform: rotate(360deg);
+		  }
+		}
+		@-moz-keyframes spinner {
+		  0% {
+		    -webkit-transform: rotate(0deg);
+		    -moz-transform: rotate(0deg);
+		    -ms-transform: rotate(0deg);
+		    -o-transform: rotate(0deg);
+		    transform: rotate(0deg);
+		  }
+		  100% {
+		    -webkit-transform: rotate(360deg);
+		    -moz-transform: rotate(360deg);
+		    -ms-transform: rotate(360deg);
+		    -o-transform: rotate(360deg);
+		    transform: rotate(360deg);
+		  }
+		}
+		@-o-keyframes spinner {
+		  0% {
+		    -webkit-transform: rotate(0deg);
+		    -moz-transform: rotate(0deg);
+		    -ms-transform: rotate(0deg);
+		    -o-transform: rotate(0deg);
+		    transform: rotate(0deg);
+		  }
+		  100% {
+		    -webkit-transform: rotate(360deg);
+		    -moz-transform: rotate(360deg);
+		    -ms-transform: rotate(360deg);
+		    -o-transform: rotate(360deg);
+		    transform: rotate(360deg);
+		  }
+		}
+		@keyframes spinner {
+		  0% {
+		    -webkit-transform: rotate(0deg);
+		    -moz-transform: rotate(0deg);
+		    -ms-transform: rotate(0deg);
+		    -o-transform: rotate(0deg);
+		    transform: rotate(0deg);
+		  }
+		  100% {
+		    -webkit-transform: rotate(360deg);
+		    -moz-transform: rotate(360deg);
+		    -ms-transform: rotate(360deg);
+		    -o-transform: rotate(360deg);
+		    transform: rotate(360deg);
+		  }
+		}
+
+	</style>
+</head>
+<body>
+	<div class="loading">Loading&#8230;</div>
+	<div id="lp-wrap">
+
+		<!-- header -->
+
+		<div id="lp-header" class="row">
+			<div class="col-1-2 width-lock space-between">
+				<img src="https://learn.bisk.com/rs/058-NIT-467/images/lp-emory-logo-v2.png" id="emory-logo">
+			</div>
+			<div class="head-info-wrap">
+				<a href="tel:800-441-0187" class="tel fg-blue-dark">Call Now<br>800-441-0187</a>
+				<a href="#ecomm_now" class="button bg-yellow fg-blue-dark">Enroll Now</a>
+			</div>
+		</div>
+
+		<!-- promo -->
+
+		<!-- <div id="lp-promo" class="row bg-blue-light fg-white">
+			<div class="col-1-1 width-lock">
+				<p id="text-promo" class="font-bold mktoText" mktoName="Promo Message">Save 20% on select courses and certificate programs for a limited time</p>
+			</div>
+		</div> -->
+
+		<!-- hero -->
+
+		<div id="lp-hero" class="row bg-blue-dark">
+			<div class="row width-lock fg-white hero-space flex-end">
+				<div class="col-1-2 flex-col flex-start">
+					<h1 id="lp-title-hero" class="mktoText" mktoName="Hero Title">Lean Six Sigma<br>Green Belt Online<br>Certification</h1>
+					<h2 id="lp-title-subhero" class="mktoText" mktoName="Hero Subhead">Learn How to Improve Product Quality and Eliminate Waste</h2>
+					<span id="lp-title-details" class="only-desk flex-col mktoText" mktoName="Hero Details">
+						<h3>Reinforce Your Value with a Green Belt</h3>
+						<p>Bridge the gap between Lean Six Sigma theory and practical application by earning a Lean Six Sigma Green Belt certification 100% online from Emory Continuing Education. During the six-week course, you will gain the Lean Six Sigma knowledge and skills to help make processes, products, and services faster and more efficient.</p>
+						<p>You’ll also learn the differences between Lean, Six Sigma and Lean Six Sigma, the roles and responsibilities of Lean Six Sigma project teams, and how to successfully apply key tools and techniques outside of the classroom.</p>
+					</span>
+				</div>
+				<div id="lp-form-wrap" class="col-1-2 flex-col padding-l-32">
+					<div id="lp-form">
+						<h5 id="lp-form-title" class="fg-blue-dark center-text font-normal mktoText" mktoName="Hero Form Title">Fill out the form below to speak with a program advisor</h5>
+						<form id="mktoForm_${form-id}"></form>
+					</div>
+					<!-- <p id="lp-phone">Call Now <strong>800-441-0187</strong></p> -->
+					<span id="lp-title-details-mob" class="only-mob flex-col mktoText" mktoName="Hero Details Mobile">
+						<h3>Reinforce Your Value with a Green Belt</h3>
+						<p>Bridge the gap between Lean Six Sigma theory and practical application by earning a Lean Six Sigma Green Belt certificate 100% online from Emory Continuing Education. During the six-week course, you will gain the Lean Six Sigma knowledge and skills to help make processes, products, and services faster and more efficient.</p>
+						<p>You’ll also learn the differences between Lean, Six Sigma and Lean Six Sigma, the roles and responsibilities of Lean Six Sigma project teams, and how to successfully apply key tools and techniques outside of the classroom.</p>
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- colorstrap gray -->
+
+		<div class="flex-col flex bg-gray">
+			<div class="row width-lock margin-tb-64 fg-gray">
+				<div class="col-2-5 flex-col flex-start padding-r-32">
+					<div id="subhero-image" class="mktoImg image-100 mob-only-margin-b-32" mktoName="Subhero Image"></div>
+					<!-- <img src="https://learn.bisk.com/rs/058-NIT-467/images/lp-emory-program-outcomes.jpg" class="image-100 mob-only-margin-b-32"> -->
+				</div>
+				<div id="subhero-text" class="col-3-5 flex-col flex-start padding-l-32 mktoText" mktoName="Subhero Text">
+					<h3 class="fg-blue-dark">Program Outcomes</h3>
+					<p>Upon your successful completion of the Lean Six Sigma Green Belt course, you will be able to:</p>
+					<ul>
+						<li>Identify and charter potential Lean Six Sigma projects consistent with organizational needs</li>
+						<li>Assist with data collection and analysis for Black Belt projects</li>
+						<li>Execute a Lean Six Sigma Green Belt project through all five DMAIC phases (define, measure, analyze, improve, control)</li>
+						<li>Assess appropriate Lean Six Sigma tools during the execution of a Green Belt project (i.e., be able to apply tools to your unique situation)</li>
+						<li>Employ software programs (Minitab and/or MS Excel) to analyze data to verify and validate root cause and associated solutions</li>
+						<li>Demonstrate the knowledge required to successfully pass the Lean Six Sigma Green Belt certification examination offered through ECE at no additional cost.</li>
+					</ul>
+				</div>
+			</div>
+			<div id="toggle-extra-content" class="row width-lock margin-b-64 margin-tm-32 fg-gray">
+				<div id="text-extra-content" class="col-1-1 flex-col flex-start padding-r-32 mktoText" mktoName="Program Extra Content">
+					<h3 class="fg-blue-dark">Title here</h3>
+					<p>Lorum ipsum paragraph.</p>
+					<p>Lorum ipsum paragraph.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- colorstrap white -->
+
+		<div id="whitestrap-text" class="row flex-col margin-tb-64 mktoText" mktoName="WhiteStrap Text">
+			<div class="row flex-col flex-start width-lock">
+				<h3 class="fg-blue-dark mkto">What You Will Learn</h3>
+			</div>
+			<div class="row width-lock fg-gray flex-start mob-only-margin-b-32">
+				<div class="col-1-2 flex-col flex-start padding-r-32">
+					<ul>
+						<li>The 5 phases of DMAIC methodology</li>
+						<li>Identifying the root cause of a problem</li>
+						<li>Management and planning tools and concepts</li>
+					</ul>
+				</div>
+				<div class="col-1-2 flex-col flex-start padding-r-32">
+					<ul>
+						<li>How to identify a Lean Six Sigma project opportunity</li>
+						<li>Kaizen planning</li>
+						<li>Industries that use Lean Six Sigma</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- colorstrap gray -->
+
+		<div class="row bg-gray flex-col padding-tb-64">
+			<div class="row width-lock fg-gray">
+				<div id="graystrap-text" class="col-4-5 flex-col center-text margin-b-64 m-left-text m-flex-start mktoText" mktoName="GrayStrap Text">
+					<h3 class="fg-blue-dark center-text">Who Should Register?</h3>
+					<p>Project participants, project managers, team leaders and other key project members across virtually every industry can benefit from learning how to define and apply key Lean and Six Sigma concepts.</p>
+					<p>If you are interested in learning the essentials of Lean Six Sigma and/or aspire to a leadership position, advancing your education through Green Belt training is a good first step.</p>
+				</div>
+			</div>
+			<div class="row width-lock fg-gray">
+				<div class="col-3-5 flex-col padding-r-32">
+					<div class="card bg-blue-dark fg-white flex-center">
+						<div id="graystrap-box-text" class="card-text flex-col center-text mktoText" mktoName="GrayStrap Box Text">
+							<p class="big">U.S. respondents who completed any level of Six Sigma training <span class="fg-yellow font-bold">earn approximately $16,000 more</span> on average than those without any Six Sigma training*.</p>
+							<p class="disc">*ASQ, Quality Progress Salary Survey, 2020</p>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="col-2-5 flex-col padding-r-32">
+					<div class="card center-text flex-center yellowline mob-only-margin-t-32">
+						<div class="card-text flex-col">
+							<h4 class="fg-blue-dark">Online Info Session</h4>
+							<p>Sign up for the next Lean Six Sigma info session to learn more about Emory’s Lean Six Sigma certificates and connect with a program advisor.</p>
+							<p class="time">Fri, Mar 26, 2021<br>12:00 - 1:00 PM</p>
+							<a href="https://ece.emory.edu/certificate-programs/info-session-ece.php?infosession=00000392-FY21" target="_blank" class="button bg-yellow fg-blue-dark gtag-click" gtag-val="rsvp">RSVP</a>
+						</div>
+					</div>
+				</div> -->
+			</div>
+		</div>
+
+		<!-- colorstrap gray -->
+
+		<div class="row bg-gray bg-emory">
+			<div class="row width-lock margin-tb-64 fg-white">
+				<div id="why-text" class="col-3-5 flex-col flex-start padding-r-32 mktoText" mktoName="Why Text">
+					<h3 class="fg-white">Why Emory?</h3>
+					<ul class="margin-b-32">
+						<li>Emory is a top 25 national university, according to U.S. News & World Report</li>
+						<li>Live instructor-led virtual class sessions offered each week</li>
+						<li>Courses taught by industry practitioners</li>
+						<li>The Lean Six Sigma Green Belt certification exam is administered within the course at no additional cost</li>
+						<li>Students who successfully complete the course will receive a digital certificate of completion and earn a Lean Six Sigma Green Belt certificate badge through ECE</li>
+					</ul>
+					<a href="#lp-form" class="button bg-yellow fg-blue-dark gtag-click" gtag-val="get_started">Get Started</a>
+				</div>
+				<div class="col-2-5 flex-col flex-start padding-l-32 mob-only-margin-t-64">
+					<div id="why-image" class="mktoImg image-100 mob-only-margin-b-32" mktoName="Why Image"></div>
+					<!-- <img src="https://learn.bisk.com/rs/058-NIT-467/images/lp-emory-why.jpg" class="image-100"> -->
+				</div>
+			</div>
+		</div>
+
+		<!-- ecomm form -->
+
+		<div class="row margin-tb-64 flex-col" id="ecomm-wrapper">
+			<div class="row margin-b-32">
+				<div class="1-2 center-text">
+					<h3 id="ecomm_now">Enroll Now Online</h3>
+					<p>Fill out the form below to get started and take the next step toward your educational goals.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-1-2">
+				<form novalidate="novalidate" id="ecomm_form" class="lead-form" action="https://stg-ecommerce.bisk.com/Enrollment/Initialize" method="POST" __bizdiag="1404908731" __biza="WJ__" onsubmit="showSpinner()">
+				    <div class="form-group">
+					    <label for="FirstName" class="">First Name:</label>
+					    <input id="FirstName" name="FirstName" maxlength="255" type="text" class="ecomm-name-field form-control" placeholder="First Name">
+					</div>
+					<div class="form-group">
+					    <label for="LastName" class="">Last Name:</label>
+					    <input id="LastName" name="LastName" maxlength="255" type="text" class="ecomm-name-field form-control" placeholder="Last Name">
+					</div>
+					<div class="form-group">
+					    <label for="Email" class="">Email Address:</label>
+					    <input id="Email" name="Email" maxlength="255" type="email" class="form-control" placeholder="Email" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpiYmZkZTQxOS00ZGRkLWU5NDYtOWQ2MC05OGExNGJiMTA3N2YiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDAyNDkwMkRDOTIyMTFFNkI0MzFGRTk2RjM1OTdENTciIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDAyNDkwMkNDOTIyMTFFNkI0MzFGRTk2RjM1OTdENTciIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OTU2NTE1NDItMmIzOC1kZjRkLTk0N2UtN2NjOTlmMjQ5ZGFjIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOmJiZmRlNDE5LTRkZGQtZTk0Ni05ZDYwLTk4YTE0YmIxMDc3ZiIv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&quot;) !important; background-repeat: no-repeat; background-size: 20px; background-position: 97% center; cursor: auto;" data-temp-mail-org="0">
+					</div>
+					<div class="form-group">
+					    <label for="Phone" class="">Phone Number:</label>
+					    <input id="Phone" name="Phone" maxlength="255" type="tel" class="form-control" placeholder="Phone">
+					</div>
+					<div class="form-group">
+					    <label for="CompanyName" class="">Company Name:</label>
+					    <input id="salesforceID" name="salesforceID" value="" class="hidden" type="text">
+					    <input id="CompanyID" name="CompanyID" value="0" class="hidden" type="text">
+					    <input id="CompanyName" name="CompanyName" maxlength="255" type="text" autocomplete="off" class="form-control" placeholder="Company Name">
+					    <ul class="output" id="predictedText" style="display:none;">
+					    </ul>
+					</div>
+					<div class="form-group">
+					    <label for="Program_of_Interest__c" class="">Program of Interest:</label>
+					    <div class="form-control  p-0 select-box-svg__inner">
+					        <select id="Program_of_Interest__c" name="Program_of_Interest__c" class="select-box-svg__select" style="color:#575757 !important" value="">
+					        	<option value="" disabled selected>Select Your Point of Interest</option>
+			                    <option id="CI" value="a037h000005K7JwAAK">Lean Continuous Improvement</option>
+			                    <option id="BB" value="a037h000005K7K6AAK">Lean Six Sigma Black Belt</option>
+			                    <option id="GB" value="a037h000005K7K1AAK">Lean Six Sigma Green Belt</option>
+					         </select>
+					    <input type="hidden" class="ecommerce_programs_array" value="a037h000005K7JwAAK#a037h000005K7K6AAK#a037h000005K7K1AAK#a036100000Rr4HUAAZ#a0361000008wRRGAA2#a034M00000XpjPMQAZ#a0361000008wRRMAA2#a034M00000XpjPRQAZ#a0361000008wRROAA2#a034M00000XpjPlQAJ#a034M00000XpjPqQAJ#a034M00000XpjPgQAJ#a0361000008wRRUAA2#a0361000008wRRVAA2#a0361000008wRRWAA2#a036100000RrX2WAAV#a034M00000RjmtcQAB#a034M00000XpjQ0QAJ#a034M00000XpjQ5QAJ#a034M00000XpjQAQAZ#">
+						</div>
+					</div>
+					<div class="form-group">
+					    <label for="CountryCode" class="">Country of Citizenship</label>
+					    <div class="form-control  p-0 select-box-svg__inner">
+					    <input id="EU_Status__c" name="EU_Status__c" class="hidden-country-input" type="hidden" value="no">
+					        <select id="CountryCode" name="CountryCode" class="select-box-svg__select gdpr-select-box" style="color:#575757 !important">
+					            <option value="">Select Country</option>
+								<option value="US" data-eu="false">United States of America</option>
+								<option value="AF" data-eu="false">Afghanistan</option>
+								<option value="AX" data-eu="false">Aland Islands</option>
+								<option value="AL" data-eu="false">Albania</option>
+								<option value="DZ" data-eu="false">Algeria</option>
+								<option value="AS" data-eu="false">American Samoa</option>
+								<option value="AD" data-eu="false">Andorra</option>
+								<option value="AO" data-eu="false">Angola</option>
+								<option value="AI" data-eu="false">Anguilla</option>
+								<option value="AQ" data-eu="false">Antarctica</option>
+								<option value="AG" data-eu="false">Antigua and Barbuda</option>
+								<option value="AR" data-eu="false">Argentina</option>
+								<option value="AM" data-eu="false">Armenia</option>
+								<option value="AW" data-eu="false">Aruba</option>
+								<option value="AU" data-eu="false">Australia</option>
+								<option value="AT" data-eu="true">Austria</option>
+								<option value="AZ" data-eu="false">Azerbaijan</option>
+								<option value="BS" data-eu="false">Bahamas</option>
+								<option value="BH" data-eu="false">Bahrain</option>
+								<option value="BD" data-eu="false">Bangladesh</option>
+								<option value="BB" data-eu="false">Barbados</option>
+								<option value="BY" data-eu="false">Belarus</option>
+								<option value="BE" data-eu="true">Belgium</option>
+								<option value="BZ" data-eu="false">Belize</option>
+								<option value="BJ" data-eu="false">Benin</option>
+								<option value="BM" data-eu="false">Bermuda</option>
+								<option value="BT" data-eu="false">Bhutan</option>
+								<option value="BO" data-eu="false">Bolivia</option>
+								<option value="BQ" data-eu="false">Bonaire, Sint Eustatius and Saba</option>
+								<option value="BA" data-eu="false">Bosnia and Herzegovina</option>
+								<option value="BW" data-eu="false">Botswana</option>
+								<option value="BV" data-eu="false">Bouvet Island</option>
+								<option value="BR" data-eu="false">Brazil</option>
+								<option value="IO" data-eu="false">British Indian Ocean Territory</option>
+								<option value="VG" data-eu="false">British Virgin Islands</option>
+								<option value="BN" data-eu="false">Brunei Darussalam</option>
+								<option value="BG" data-eu="true">Bulgaria</option>
+								<option value="BF" data-eu="false">Burkina Faso</option>
+								<option value="BI" data-eu="false">Burundi</option>
+								<option value="KH" data-eu="false">Cambodia</option>
+								<option value="CM" data-eu="false">Cameroon</option>
+								<option value="CA" data-eu="false">Canada</option>
+								<option value="CV" data-eu="false">Cape Verde</option>
+								<option value="KY" data-eu="false">Cayman Islands</option>
+								<option value="CF" data-eu="false">Central African Republic</option>
+								<option value="TD" data-eu="false">Chad</option>
+								<option value="CL" data-eu="false">Chile</option>
+								<option value="CN" data-eu="false">China</option>
+								<option value="CX" data-eu="false">Christmas Island</option>
+								<option value="CC" data-eu="false">Cocos (Keeling) Islands</option>
+								<option value="CO" data-eu="false">Colombia</option>
+								<option value="KM" data-eu="false">Comoros</option>
+								<option value="CK" data-eu="false">Cook Islands</option>
+								<option value="CR" data-eu="false">Costa Rica</option>
+								<option value="CI" data-eu="false">Cote dIvoire</option>
+								<option value="HR" data-eu="true">Croatia</option>
+								<option value="CU" data-eu="false">Cuba</option>
+								<option value="CW" data-eu="false">Curacao</option>
+								<option value="CY" data-eu="true">Cyprus</option>
+								<option value="CZ" data-eu="true">Czech Republic</option>
+								<option value="CD" data-eu="false">Democratic Republic of the Congo</option>
+								<option value="DK" data-eu="true">Denmark</option>
+								<option value="DJ" data-eu="false">Djibouti</option>
+								<option value="DM" data-eu="false">Dominica</option>
+								<option value="DO" data-eu="false">Dominican Republic</option>
+								<option value="EC" data-eu="false">Ecuador</option>
+								<option value="EG" data-eu="false">Egypt</option>
+								<option value="SV" data-eu="false">El Salvador</option>
+								<option value="GQ" data-eu="false">Equatorial Guinea</option>
+								<option value="ER" data-eu="false">Eritrea</option>
+								<option value="EE" data-eu="true">Estonia</option>
+								<option value="ET" data-eu="false">Ethiopia</option>
+								<option value="FK" data-eu="false">Falkland Islands (Malvinas)</option>
+								<option value="FO" data-eu="false">Faroe Islands</option>
+								<option value="FJ" data-eu="false">Fiji</option>
+								<option value="FI" data-eu="true">Finland</option>
+								<option value="FR" data-eu="true">France</option>
+								<option value="GF" data-eu="false">French Guiana</option>
+								<option value="PF" data-eu="false">French Polynesia</option>
+								<option value="TF" data-eu="false">French Southern Territories</option>
+								<option value="GA" data-eu="false">Gabon</option>
+								<option value="GM" data-eu="false">Gambia</option>
+								<option value="GE" data-eu="false">Georgia</option>
+								<option value="DE" data-eu="true">Germany</option>
+								<option value="GH" data-eu="false">Ghana</option>
+								<option value="GI" data-eu="false">Gibraltar</option>
+								<option value="GR" data-eu="true">Greece</option>
+								<option value="GL" data-eu="false">Greenland</option>
+								<option value="GD" data-eu="false">Grenada</option>
+								<option value="GP" data-eu="false">Guadeloupe</option>
+								<option value="GU" data-eu="false">Guam</option>
+								<option value="GT" data-eu="false">Guatemala</option>
+								<option value="GG" data-eu="false">Guernsey</option>
+								<option value="GN" data-eu="false">Guinea</option>
+								<option value="GW" data-eu="false">Guinea-Bissau</option>
+								<option value="GY" data-eu="false">Guyana</option>
+								<option value="HT" data-eu="false">Haiti</option>
+								<option value="HM" data-eu="false">Heard Island and McDonald Islands</option>
+								<option value="VA" data-eu="false">Holy See (Vatican City State)</option>
+								<option value="HN" data-eu="false">Honduras</option>
+								<option value="HK" data-eu="false">Hong Kong</option>
+								<option value="HU" data-eu="true">Hungary</option>
+								<option value="IS" data-eu="false">Iceland</option>
+								<option value="IN" data-eu="false">India</option>
+								<option value="ID" data-eu="false">Indonesia</option>
+								<option value="IR" data-eu="false">Iran, Islamic Republic of</option>
+								<option value="IQ" data-eu="false">Iraq</option>
+								<option value="IE" data-eu="true">Ireland</option>
+								<option value="IM" data-eu="false">Isle of Man</option>
+								<option value="IL" data-eu="false">Israel</option>
+								<option value="IT" data-eu="true">Italy</option>
+								<option value="JM" data-eu="false">Jamaica</option>
+								<option value="JP" data-eu="false">Japan</option>
+								<option value="JE" data-eu="false">Jersey</option>
+								<option value="JO" data-eu="false">Jordan</option>
+								<option value="KZ" data-eu="false">Kazakhstan</option>
+								<option value="KE" data-eu="false">Kenya</option>
+								<option value="KI" data-eu="false">Kiribati</option>
+								<option value="KP" data-eu="false">Korea, Democratic People's Republic of</option>
+								<option value="XK" data-eu="false">Kosovo</option>
+								<option value="KW" data-eu="false">Kuwait</option>
+								<option value="KG" data-eu="false">Kyrgyzstan</option>
+								<option value="LA" data-eu="false">Lao People's Democratic Republic</option>
+								<option value="LV" data-eu="true">Latvia</option>
+								<option value="LB" data-eu="false">Lebanon</option>
+								<option value="LS" data-eu="false">Lesotho</option>
+								<option value="LR" data-eu="false">Liberia</option>
+								<option value="LY" data-eu="false">Libyan Arab Jamahiriya</option>
+								<option value="LI" data-eu="false">Liechtenstein</option>
+								<option value="LT" data-eu="true">Lithuania</option>
+								<option value="LU" data-eu="true">Luxembourg</option>
+								<option value="MO" data-eu="false">Macau</option>
+								<option value="MK" data-eu="false">Macedonia</option>
+								<option value="MG" data-eu="false">Madagascar</option>
+								<option value="MW" data-eu="false">Malawi</option>
+								<option value="MY" data-eu="false">Malaysia</option>
+								<option value="MV" data-eu="false">Maldives</option>
+								<option value="ML" data-eu="false">Mali</option>
+								<option value="MT" data-eu="true">Malta</option>
+								<option value="MH" data-eu="false">Marshall Islands</option>
+								<option value="MQ" data-eu="false">Martinique</option>
+								<option value="MR" data-eu="false">Mauritania</option>
+								<option value="MU" data-eu="false">Mauritius</option>
+								<option value="YT" data-eu="false">Mayotte</option>
+								<option value="MX" data-eu="false">Mexico</option>
+								<option value="FM" data-eu="false">Micronesia</option>
+								<option value="MD" data-eu="false">Moldova, Republic of</option>
+								<option value="MC" data-eu="false">Monaco</option>
+								<option value="MN" data-eu="false">Mongolia</option>
+								<option value="ME" data-eu="false">Montenegro</option>
+								<option value="MS" data-eu="false">Montserrat</option>
+								<option value="MA" data-eu="false">Morocco</option>
+								<option value="MZ" data-eu="false">Mozambique</option>
+								<option value="MM" data-eu="false">Myanmar</option>
+								<option value="NA" data-eu="false">Namibia</option>
+								<option value="NR" data-eu="false">Nauru</option>
+								<option value="NP" data-eu="false">Nepal</option>
+								<option value="NL" data-eu="true">Netherlands</option>
+								<option value="AN" data-eu="false">Netherlands Antilles</option>
+								<option value="NC" data-eu="false">New Caledonia</option>
+								<option value="NZ" data-eu="false">New Zealand</option>
+								<option value="NI" data-eu="false">Nicaragua</option>
+								<option value="NE" data-eu="false">Niger</option>
+								<option value="NG" data-eu="false">Nigeria</option>
+								<option value="NU" data-eu="false">Niue</option>
+								<option value="NF" data-eu="false">Norfolk Island</option>
+								<option value="MP" data-eu="false">Northern Mariana Islands</option>
+								<option value="NO" data-eu="false">Norway</option>
+								<option value="OM" data-eu="false">Oman</option>
+								<option value="PK" data-eu="false">Pakistan</option>
+								<option value="PS" data-eu="false">Palestinian Territory, Occupied</option>
+								<option value="PA" data-eu="false">Panama</option>
+								<option value="PG" data-eu="false">Papua New Guinea</option>
+								<option value="PY" data-eu="false">Paraguay</option>
+								<option value="PE" data-eu="false">Peru</option>
+								<option value="PH" data-eu="false">Philippines</option>
+								<option value="PN" data-eu="false">Pitcairn</option>
+								<option value="PL" data-eu="true">Poland</option>
+								<option value="PT" data-eu="true">Portugal</option>
+								<option value="PR" data-eu="false">Puerto Rico</option>
+								<option value="QA" data-eu="false">Qatar</option>
+								<option value="CG" data-eu="false">Republic of the Congo</option>
+								<option value="RE" data-eu="false">Reunion</option>
+								<option value="RO" data-eu="true">Romania</option>
+								<option value="RU" data-eu="false">Russia</option>
+								<option value="RW" data-eu="false">Rwanda</option>
+								<option value="BL" data-eu="false">Saint Barthelemy</option>
+								<option value="SH" data-eu="false">Saint Helena, Ascension and Tristan da Cunha</option>
+								<option value="KN" data-eu="false">Saint Kitts and Nevis</option>
+								<option value="LC" data-eu="false">Saint Lucia</option>
+								<option value="MF" data-eu="false">Saint Martin (French part)</option>
+								<option value="PM" data-eu="false">Saint Pierre and Miquelon</option>
+								<option value="VC" data-eu="false">Saint Vincent and the Grenadines</option>
+								<option value="WS" data-eu="false">Samoa</option>
+								<option value="SM" data-eu="false">San Marino</option>
+								<option value="ST" data-eu="false">Sao Tome and Principe</option>
+								<option value="SA" data-eu="false">Saudi Arabia</option>
+								<option value="SN" data-eu="false">Senegal</option>
+								<option value="RS" data-eu="false">Serbia</option>
+								<option value="SC" data-eu="false">Seychelles</option>
+								<option value="SL" data-eu="false">Sierra Leone</option>
+								<option value="SG" data-eu="false">Singapore</option>
+								<option value="SX" data-eu="false">Sint Maarten (Dutch part)</option>
+								<option value="SK" data-eu="true">Slovakia</option>
+								<option value="SI" data-eu="true">Slovenia</option>
+								<option value="SB" data-eu="false">Solomon Islands</option>
+								<option value="SO" data-eu="false">Somalia</option>
+								<option value="ZA" data-eu="false">South Africa</option>
+								<option value="GS" data-eu="false">South Georgia and the South Sandwich Islands</option>
+								<option value="KR" data-eu="false">South Korea</option>
+								<option value="SS" data-eu="false">South Sudan</option>
+								<option value="ES" data-eu="true">Spain</option>
+								<option value="LK" data-eu="false">Sri Lanka</option>
+								<option value="SD" data-eu="false">Sudan</option>
+								<option value="SR" data-eu="false">Suriname</option>
+								<option value="SJ" data-eu="false">Svalbard and Jan Mayen</option>
+								<option value="SZ" data-eu="false">Swaziland</option>
+								<option value="SE" data-eu="true">Sweden</option>
+								<option value="CH" data-eu="false">Switzerland</option>
+								<option value="SY" data-eu="false">Syrian Arab Republic</option>
+								<option value="TW" data-eu="false">Taiwan</option>
+								<option value="TJ" data-eu="false">Tajikistan</option>
+								<option value="TZ" data-eu="false">Tanzania</option>
+								<option value="TH" data-eu="false">Thailand</option>
+								<option value="TL" data-eu="false">Timor-Leste</option>
+								<option value="TG" data-eu="false">Togo</option>
+								<option value="TK" data-eu="false">Tokelau</option>
+								<option value="TO" data-eu="false">Tonga</option>
+								<option value="TT" data-eu="false">Trinidad and Tobago</option>
+								<option value="TN" data-eu="false">Tunisia</option>
+								<option value="TR" data-eu="false">Turkey</option>
+								<option value="TM" data-eu="false">Turkmenistan</option>
+								<option value="TC" data-eu="false">Turks and Caicos Islands</option>
+								<option value="TV" data-eu="false">Tuvalu</option>
+								<option value="UG" data-eu="false">Uganda</option>
+								<option value="UA" data-eu="false">Ukraine</option>
+								<option value="AE" data-eu="false">United Arab Emirates</option>
+								<option value="GB" data-eu="true">United Kingdom</option>
+								<option value="UM" data-eu="false">United States Minor Outlying Islands</option>
+								<option value="UY" data-eu="false">Uruguay</option>
+								<option value="VI" data-eu="false">US Virgin Islands</option>
+								<option value="UZ" data-eu="false">Uzbekistan</option>
+								<option value="VU" data-eu="false">Vanuatu</option>
+								<option value="VE" data-eu="false">Venezuela</option>
+								<option value="VN" data-eu="false">Vietnam</option>
+								<option value="WF" data-eu="false">Wallis and Futuna</option>
+								<option value="EH" data-eu="false">Western Sahara</option>
+								<option value="YE" data-eu="false">Yemen</option>
+								<option value="ZM" data-eu="false">Zambia</option>
+								<option value="ZW" data-eu="false">Zimbabwe</option>
+					        </select>
+					    </div>
+					</div>
+					<div class="form-group hidden-controls d-none">
+					    <input type="hidden" id="ecomm_univ_id" name="University_Institution__c" value="0017h00000WPUpdAAH">
+					    <input type="hidden" name="LeadSource" value="Website">
+					    <input type="hidden" name="Inquiry_Source_Detail__c" value="Direct Visit">
+					    <input type="hidden" name="Inquiry_Source_Asset__c" value="">
+					    <input type="hidden" name="Website" value="">
+					    <input type="hidden" name="mktoCampaign" value="">
+					    <input type="hidden" name="TCPA_Notice__c" value="By completing this form and clicking the button below, I consent to receiving calls, text messages and/or emails from BISK, its client institutions, and their representatives regarding educational services and programs. I understand calls and texts may be directed to the number I provide using automatic dialing technology. I understand that this consent is not required to purchase goods or services.">
+					    <input type="hidden" name="TCPA__c" value="">
+					    <input type="hidden" name="TCPA_Consent_ID__c" value="">
+					    <input type="hidden" name="TCPA_Disclosure_Version_ID__c" value="13">
+					    <input type="hidden" name="TCPA_IP_Address__c" value="198.143.47.2">
+					    <input type="hidden" name="TCPA_Date_Time_Consent__c" value="2021-06-25 16:29:12">
+					    <input type="hidden" name="Landing_Page_URL__c" value="">
+					    <input type="hidden" name="Source__c" value="">
+					    <input type="hidden" name="Medium__c" value="">
+					    <input type="hidden" name="Visitor_ID__c" value="">
+					    <input type="hidden" name="Content__c" value="">
+					    <input type="hidden" name="Term__c" value="">
+					    <input type="hidden" name="Count_of_Sessions__c" value="">
+					    <input type="hidden" name="Count_of_Page_Views__c" value="">
+					    <input type="hidden" name="Click_ID__c" value="">
+					    <input type="hidden" name="List" value="">
+					    <input type="hidden" name="formid" value="">
+					    <input type="hidden" name="munchkinId" value="">
+					    <input type="hidden" name="Program_of_Interest" disabled="disabled" value="">
+					    <input type="hidden" name="program_id" disabled="disabled" value="">
+					    <input type="hidden" name="parent_program_id" disabled="disabled" value="">
+					    <input type="hidden" name="school_id" disabled="disabled" value="0017h00000WPUpdAAH">
+					    <input type="hidden" id="GCLID__c" name="GCLID__c" value="">
+					</div>
+					<div class="tcpaMessage">
+					    <!-- <p id="tcpaMessage" class="tcpa-font--backgroundcolor"></p> -->
+					    <p class="disc">
+					      By completing this form and clicking the button below, I consent to receiving calls, text messages and/or emails from BISK, its client institutions, and their representatives regarding educational services and programs. I understand calls and texts may be directed to the number I provide using automatic dialing technology. I understand that this consent is not required to purchase goods or services.
+					    </p>
+					</div>
+					<button type="submit" id="submit_ecomm_form" class="button bg-yellow fg-blue-dark" style="border: none; margin-top: 12px;">Enroll Now</button>
+				</form>
+			</div>
+			</div>
+		</div>
+
+		<!-- footer -->
+
+		<div id="footer" class="row flex-col bg-blue-dark fg-white center-text">
+			<div class="row width-lock">
+				<div class="col-4-5 flex-col">
+					<p>Delivered on behalf of Emory Continuing Education by Bisk &copy; 2021<br>
+					Program cost, availability and requirements are subject to change.</p>
+				</div>
+			</div>
+			<div class="row width-lock margin-t-32">
+				<div class="col-3-5">
+					<a href="https://ece.emory.edu/policies/index.php" target="_blank" class="fg-white gtag-click" gtag-val="privacy_policy">Policies and Terms</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- sf chat -->
+
+		<div class="embeddedServiceInvitation" id="snapins_invite" inert="true" aria-live="assertive" role="dialog" aria-atomic="true">
+			<div class="embeddedServiceInvitationHeader" aria-labelledby="snapins_titletext" aria-describedby="snapins_bodytext">
+				<img id="embeddedServiceAvatar"></img>
+				<span class="embeddedServiceTitleText" id="snapins_titletext">Need help?</span>
+				<button type="button" id="closeInvite" class="embeddedServiceCloseIcon gtag-click" aria-label="Exit invitation" gtag-val="sf_chat_close_invite">&times;</button>
+			</div>
+			<div id="sf-barge" class="embeddedServiceInvitationBody mktoText" mktoName="Barge Message">
+				<p id="snapins_bodytext">Have questions about the <span id="lp-chat-question">Consequat Dolor Excepteur</span> online certificate? I can help.</p>
+			</div>
+			<div class="embeddedServiceInvitationFooter" aria-describedby="snapins_bodytext">
+				<button type="button" class="embeddedServiceActionButton gtag-click" id="rejectInvite" gtag-val="sf_chat_reject_invite">Close</button>
+				<button type="button" class="embeddedServiceActionButton gtag-click" id="acceptInvite" gtag-val="sf_chat_accept_invite">Start Chat</button>
+			</div>
+		</div>
+
+	</div>
+
+	<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
+    <script>
+
+    	pgName = '${page-name}' + '_';
+
+    	//////////// Validation ///////////
+
+    	$('form#ecomm_form').validate({
+    		rules: {
+    			FirstName: {
+    				required: true
+    			},
+    			LastName: {
+    				required: true
+    			},
+    			Email: {
+    				required: true,
+    				email: true
+    			},
+    			Phone: {
+    				required: true,
+    				number: true,
+    				minlength: 7
+    			},
+    			CompanyName: {
+    				required: false
+    			},
+    			Program_of_Interest__c: {
+    				required: true
+    			},
+    			CountryCode: {
+    				required: true
+    			}
+    		}
+    	});
+
+
+    	$("#ecomm_form").submit(function (event) {
+
+		    var isValid = $('#ecomm_form').valid();
+		    if (isValid) {    
+		        $(".loading").show();
+		    }
+		});
+
+		selectedInput = document.getElementById('${page-name}');
+		console.log(selectedInput);
+		selectedInput.setAttribute('selected', 'selected');
+
+		// $(pgName).setAttribute()
+
+    	//////////// SF Chat ///////////
+
+        (function() {
+            document.getElementById('closeInvite').onclick = function() { embedded_svc.inviteAPI.inviteButton.rejectInvite(); };
+            document.getElementById('rejectInvite').onclick = function() { embedded_svc.inviteAPI.inviteButton.rejectInvite(); }; // use this API call to reject invitations
+            document.getElementById('acceptInvite').onclick = function() { embedded_svc.inviteAPI.inviteButton.acceptInvite(); }; // use this API call to start chat from invitations
+            document.addEventListener('keyup', function(event) { if (event.keyCode == 27) { embedded_svc.inviteAPI.inviteButton.rejectInvite(); }})
+        })();
+
+        // Below changes based on instance
+
+		var initESW = function(gslbBaseURL) {
+			embedded_svc.settings.displayHelpButton = true; //Or false
+			embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
+
+			//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
+			//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
+
+			//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
+			//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
+
+			// Settings for Chat
+			//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
+				// Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
+				// Returns a valid button ID.
+			//};
+			//embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
+			//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
+			//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
+
+			embedded_svc.settings.enabledFeatures = ['LiveAgent'];
+			embedded_svc.settings.entryFeature = 'LiveAgent';
+
+			embedded_svc.init(
+				'https://bisk.my.salesforce.com',
+				'https://bisk.secure.force.com/branding',
+				gslbBaseURL,
+				'00D61000000Ju34',
+				// 'Villanova_University_Certificate',
+				'Emory_University_Certificate',
+				{
+					baseLiveAgentContentURL: 'https://c.la3-c2-ia2.salesforceliveagent.com/content',
+					deploymentId: '5724M000000GyEI',
+					buttonId: '5734M000000GzE1',
+					baseLiveAgentURL: 'https://d.la3-c2-ia2.salesforceliveagent.com/chat',
+					eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I4M000000KymPUAS_1797c38b53e',
+					isOfflineSupportEnabled: false
+				}
+			);
+		};
+
+		if (!window.embedded_svc) {
+			var s = document.createElement('script');
+			s.setAttribute('src', 'https://bisk.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+			s.onload = function() {
+				initESW(null);
+			};
+			document.body.appendChild(s);
+		} else {
+			initESW('https://service.force.com');
+		}
+
+        //////////// Load Marketo Form ///////////
+
+        MktoForms2.loadForm("https://learn.bisk.com", "058-NIT-467", ${form-id});
+
+        //////////// Marketo Form Config ///////////
+
+		var userConfig = {
+	   		buttons: {
+	      	prev: {
+	        	label: "Back",
+	         	disabled: false
+	    },
+	    	next: {
+	        	label: "Next"
+	    	}
+	    },
+
+	    // Edit required fields as needed
+
+		requiredFields: [
+				{
+					 name: "Program_of_Interest__c",
+					 message: "This field is required."
+				},
+				{
+					name: "Highest_Level_of_Education__c",
+					message: "This field is required."
+				},
+				{
+					name: "FirstName",
+					message: "This field is required."
+				},
+				{
+					name: "LastName",
+					message: "This field is required."
+				},
+				{
+					name: "Email",
+					message: "This field is required."
+				},
+				{
+					name: "Phone",
+					message: "This field is required."
+				},
+				{
+					name: "Military_Relationship__c",
+					message: "This field is required."
+				},
+				{
+					name: "CountryCode",
+					message: "This field is required."
+			  	}
+			]
+		};
+
+		//////////// Marketo Form Magic ///////////
+
+		MktoForms2.whenReady(function(form) {
+			var formEl = form.getFormElem()[0],
+			arrayify = getSelection.call.bind([].slice);
+
+			var fieldRowStor = ".mktoForm > .mktoFormRow",
+				buttonRowStor = ".mktoForm > .mktoButtonRow",
+				buttonStor = ".mktoButtonRow .mktoButton",
+				fsaatPrefix = "fsaat-",
+				localFragmentAttr = "data-form-local-fragment";
+		   
+			var CSSOM_RULEPOS_FIRST = 0;
+
+			var fieldRows = formEl.querySelectorAll(fieldRowStor),
+				submitButtonRow = formEl.querySelector(buttonRowStor),
+				submitButton = submitButtonRow.querySelector(buttonStor);
+		   
+			userConfig.requiredFields
+			.map(function(fieldDesc) {
+		        fieldDesc.label = formEl.querySelector("[for='"+ fieldDesc.name + "']");
+		        fieldDesc.refEl = formEl.querySelector("[name='" + fieldDesc.name + "']");
+		        return fieldDesc;
+		     })
+			.forEach(function(fieldDesc){
+				fieldDesc.label.parentNode.classList.add("mktoRequiredField");
+			});
+		   
+		    var dynableSheet = arrayify(document.styleSheets)
+			.filter(function(sheet){
+				return sheet.ownerNode.nodeName == "STYLE";
+			})[0];   
+		   
+			arrayify(fieldRows).forEach(function(row, rowIdx) {
+			var rowPos = {
+				isFirst: rowIdx == 0,
+				isLast: rowIdx == fieldRows.length - 1
+			};
+
+			// id each wrapper row in DOM order
+
+			row.id = fsaatPrefix + rowIdx;
+
+			var navButtonRow = rowPos.isLast
+					? submitButtonRow
+					: submitButtonRow.cloneNode(true),
+				newRowAxis = row.nextSibling,
+				nextEnabled = !rowPos.isLast,
+				prevEnabled = !rowPos.isFirst && !userConfig.buttons.prev.disabled,
+				newButtonAxis,
+				newButtonTmpl,
+				navButtons = {};
+
+			if (nextEnabled) {
+		         navButtons.next = navButtonRow.querySelector(buttonStor);
+			}
+
+			if (prevEnabled) {
+				newButtonTmpl = newButtonAxis = navButtons.next || submitButton;
+		        navButtons.prev = newButtonTmpl.cloneNode();
+			}
+
+			Object.keys(navButtons).forEach(function(dir) {
+				navButtons[dir].type = "button";
+				navButtons[dir].setAttribute("data-dir", dir);
+				navButtons[dir].innerHTML = userConfig.buttons[dir].label;
+			});
+
+			if (nextEnabled) {
+				row.parentNode.insertBefore(navButtonRow, newRowAxis);
+			}
+
+			if (prevEnabled) {
+				newButtonAxis.parentNode.insertBefore(navButtons.prev, newButtonAxis);
+			}
+		            
+			navButtonRow.addEventListener("click", function(e) {
+				if (e.target.tagName == "BUTTON" && e.target.type == "button" ) {            
+					if (e.target.getAttribute("data-dir") == "next" && !isCustomValid(true,row)) {
+						return;
+			    	}
+			    fsaatSet(row, e.target.getAttribute("data-dir"));
+				}
+			});
+		      
+			dynableSheet.insertRule(
+				[
+					".mktoForm[" + localFragmentAttr + "='#" + row.id + "']" + " " + ".mktoFormRow#" + row.id + ",",
+					".mktoForm[" + localFragmentAttr + "='#" + row.id + "']" + " " + ".mktoFormRow#" + row.id + " + " + ".mktoButtonRow", 
+					"{ display: block; }"
+				].join(" "),
+					CSSOM_RULEPOS_FIRST
+				);
+			});
+
+			function fsaatSet(current, dir) {
+				var FSAAT_DIR_PREV = "prev",
+				FSAAT_DIR_NEXT = "next";
+		      
+				var dir = dir || FSAAT_DIR_NEXT,
+				currentIndex, 
+				newHash;
+
+				if (current instanceof HTMLElement) {
+					currentIndex = +current.id.split(fsaatPrefix)[1];
+				} else if (!isNaN(current)) {
+					currentIndex = current;
+				} else {
+					currentIndex = -1;
+				}
+
+				newHash = "#" + fsaatPrefix + (dir == FSAAT_DIR_NEXT ? ++currentIndex : --currentIndex);
+
+				formEl.setAttribute(localFragmentAttr, newHash);
+			}    
+		   
+			function isCustomValid(native, currentStep){
+			form.submittable(false);
+		      
+			var currentStep = currentStep || formEl,
+				currentValues = form.getValues();
+
+			var currentUnfilled = userConfig.requiredFields
+				.filter(function(fieldDesc) {
+					return currentStep.contains(fieldDesc.refEl) && (!currentValues[fieldDesc.name] || (fieldDesc.refEl.type == "checkbox" && currentValues[fieldDesc.name] == "no"));
+			});
+
+			if (currentUnfilled.length) {
+				form.showErrorMessage(currentUnfilled[0].message,MktoForms2.$(currentUnfilled[0].refEl));
+				return false;
+			} else {
+				form.submittable(true);
+				return true;
+				}         
+			}
+		   
+			form.onValidate(isCustomValid);
+			fsaatSet();
+
+			// UI Magic
+
+			labels = document.getElementsByClassName('mktoLabel');
+			inputs = document.getElementsByClassName('mktoField');
+			inputValues = [];
+		   
+			for (i = 0; i < labels.length; i++) {
+				label = document.getElementsByClassName('mktoLabel')[i];
+				label.style.opacity = '0';
+				name = label.innerHTML.split("</div>").pop();
+				input = label.nextSibling.nextSibling;
+				input.setAttribute('placeholder', name);
+			}
+		   
+			for (i = 0; i < inputs.length; i++) {
+				input = document.getElementsByClassName('mktoField')[i];
+				input.addEventListener('focusin', function() {
+			        boo = this.previousSibling.previousSibling;
+			        boo.style.opacity = '1';
+			        placeholder = this.setAttribute('placeholder', '');
+			        this.setAttribute('style', 'padding: 12px 6px 0 6px !important');
+				});
+				input.addEventListener('focusout', function() {
+		        	boo = this.previousSibling.previousSibling;
+		        	placeholder = this.setAttribute('placeholder', boo.innerHTML.split("</div>").pop());
+		        	if(this.value == "") {
+						boo.style.opacity = '0';
+						this.setAttribute('style', 'padding: 2px 6px 0 6px !important');
+		        	}
+		        	else {
+						boo.style.opacity = '1';
+		        	}
+				});
+		    }
+
+		    console.log(inputs[0].value);
+
+		    btnSubmit = document.querySelector('button[type="submit"]');
+		    btnSubmit.addEventListener('click', function() {
+		    for (i = 0; i < inputs.length; i++) {
+				inputVal = document.getElementsByClassName('mktoField')[i].value;
+				console.log(inputVal);
+				inputValues.push(inputVal);
+		    }
+		    // console.log(inputValues);
+		    if (inputValues.includes('')) {
+				console.log('one of the values is empty');
+		    }
+		    else {
+	            btnSubmit.innerHTML = 'Wait...';
+	            // alert('booooom');
+	            document.querySelector('button[type="button"]:nth-child(1)').style.display = 'none !important';
+		        }
+		    });
+
+		    legends = document.querySelectorAll('legend');
+		    legends.forEach(element => {
+			    let currText = element.innerHTML.replace('0', '');
+			    steps = document.querySelectorAll('fieldset');
+			    element.innerHTML = currText + ' of ' + steps.length;
+			    element.setAttribute('style', 'display: block !important');
+		    });
+
+		    lala = document.querySelectorAll('.mktoField');
+		    lala.forEach(element => {
+		      element.addEventListener('focusin', function() {
+		         console.log('focusIn');
+		         // element.setAttribute('style', 'padding: 12px 6px 0 6px !important');
+		      });
+		      element.addEventListener('focusout', function() {
+		         console.log('focusOut');
+		         // element.setAttribute('style', 'padding: 2px 6px 0 6px !important');
+		      });
+		    });
+
+		    // Group Dropdowns
+
+		    arrayify(formEl.querySelectorAll('SELECT'))
+		    .forEach(function(selectEl) {
+		        var currentOg;
+		        arrayify(selectEl.querySelectorAll('OPTION'))
+		            .forEach(function(o, idx) {
+		                if (o.value == '[OPTGROUP]') {
+		                    currentOg = document.createElement('OPTGROUP');
+		                    currentOg.label = o.textContent;
+		                    selectEl.appendChild(currentOg);
+		                    selectEl.removeChild(o);
+		                } else {
+		                    if (currentOg) currentOg.appendChild(o);
+		            }
+		        });
+		    });
+
+		    // Disable Inputs
+
+		    hiddenEls = formEl.querySelectorAll('.mktoFormRow input[type="hidden"]');                
+		    for(var i = 0; i < hiddenEls.length; i++) {
+		        hiddenEls[i].parentNode.style.display = "none";
+		    }
+
+		    optionEls = formEl.querySelectorAll('OPTION'),
+		    disabledTag = /^\[DISABLED\]\s/,
+		    _forEach = Array.prototype.forEach;
+		    _forEach.call(optionEls,function(opt){
+		        if (disabledTag.test(opt.textContent)) {
+		            	opt.textContent = opt.textContent.replace(disabledTag,'');
+		            	opt.disabled = true;
+		        } 
+		    });
+
+		    // Add hidden fields
+
+		    form.addHiddenFields({ Landing_Page_URL__c : document.location} );
+		    // form.addHiddenFields({ mktoUTMTerm : currHead });
+
+		    // Show Form
+
+		    document.getElementById("lp-form").style.opacity = 1;
+		    // document.getElementById("lp-phone").style.opacity = 1;
+
+		    // gtag form
+
+			btnNext = document.querySelector('button[data-dir="next"]');
+			btnPrev = document.querySelector('button[data-dir="prev"]');
+			btnSub = document.querySelector('button[type="submit"]');
+			
+			btnNext.addEventListener('click', function() {
+				gtag('event', "click", {
+					'event_category': "ST6",
+					'event_label': pgName + "form_next",
+				});
+			});
+
+			btnPrev.addEventListener('click', function() {
+				gtag('event', "click", {
+					'event_category': "ST6",
+					'event_label': pgName + "form_back"
+				});
+			});
+
+			btnSub.addEventListener('click', function() {
+				gtag('event', "click", {
+					'event_category': "ST6",
+					'event_label': pgName + "form_submit"
+				});
+			});
+
+		});
+
+		//////////// Gtag page ///////////
+
+		let gTags = document.querySelectorAll(".gtag-click");
+
+		gTags.forEach(element => {
+			element.addEventListener('click', function() {
+				gtagVal = element.getAttribute("gtag-val");
+				gtag('event', "click", {
+					'event_category': "ST6",
+					'event_label': pgName + gtagVal
+				});
+			console.log(gtagVal);
+			});
+		});
+
+		// gtag SF chat //
+
+		// window.addEventListener('load', (event) => {
+		// 	document.querySelector(".helpButtonEnabled").addEventListener("click", function() {
+		// 		gtag('event', "click", {
+		// 			'event_category': "ST6",
+		// 			'event_label': pgName + "sf_chat_with_expert"
+		// 		});
+		// 	});
+		// });
+
+		///////////// Fade Barge In ///////////
+
+		// get the element to animate
+		let element = document.getElementById('snapins_invite');
+		let elementHeight = element.clientHeight;
+
+		// listen for scroll event and call animate function
+		document.addEventListener('scroll', animate);
+
+		// check if element is in view
+		function inView() {
+			// get window height
+			let windowHeight = window.innerHeight;
+			// get number of pixels that the document is scrolled
+			let scrollY = window.scrollY || window.pageYOffset;
+
+			// get current scroll position (distance from the top of the page to the bottom of the current viewport)
+			let scrollPosition = scrollY + windowHeight;
+			// get element position (distance from the top of the page to the bottom of the element)
+			let elementPosition = element.getBoundingClientRect().top + scrollY + elementHeight;
+
+			// is scroll position greater than element position? (is element in view?)
+			if (scrollPosition > elementPosition) {
+				return true;
+		}
+		  
+			return false;
+		}
+
+		function animate() {
+			if (inView()) {
+				console.log('in view!');
+				element.style.opacity = '1';
+			}
+		}
+    </script>
+</body>
+</html>
